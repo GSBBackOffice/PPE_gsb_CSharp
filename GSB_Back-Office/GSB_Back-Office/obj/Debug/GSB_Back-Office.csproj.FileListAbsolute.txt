@@ -1,0 +1,10 @@
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csprojResolveAssemblyReference.cache
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAppli.resources
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmIdentification.resources
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
+F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb

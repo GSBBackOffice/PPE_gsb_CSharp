@@ -8,3 +8,13 @@ F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB
 F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
 F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
 F:\ICOF\2EME_ANNEE\DEV\PPE-GSB2_C#\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csprojResolveAssemblyReference.cache
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAppli.resources
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmIdentification.resources
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache

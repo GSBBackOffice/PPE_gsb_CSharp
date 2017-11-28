@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAOFactory.cs" />
+    <Compile Include="DAOIdentification.cs" />
     <Compile Include="FrmIdentification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +60,7 @@
     <Compile Include="FrmAppli.Designer.cs">
       <DependentUpon>FrmAppli.cs</DependentUpon>
     </Compile>
+    <Compile Include="Identification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAppli.resx">

@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAppli));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageProduits = new System.Windows.Forms.TabPage();
+            this.dgvContrindication = new System.Windows.Forms.DataGridView();
+            this.colContrindication = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvEffetThera = new System.Windows.Forms.DataGridView();
+            this.colEffetThera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInteractionProduit = new System.Windows.Forms.DataGridView();
+            this.colNomProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colInteractionProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblMedicament = new System.Windows.Forms.Label();
+            this.cbxProduit = new System.Windows.Forms.ComboBox();
             this.btnModifierProduit = new System.Windows.Forms.Button();
             this.txbPrixEchantillonProduit = new System.Windows.Forms.TextBox();
             this.txbPrixVenteProduit = new System.Windows.Forms.TextBox();
@@ -56,22 +62,41 @@
             this.colCpVisiteur = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colVilleVisiteur = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDateEmbaucheVisiteur = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbxProduit = new System.Windows.Forms.ComboBox();
-            this.lblMedicament = new System.Windows.Forms.Label();
-            this.dgvInteractionProduit = new System.Windows.Forms.DataGridView();
-            this.dgvEffetThera = new System.Windows.Forms.DataGridView();
-            this.colNomProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colInteractionProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvContrindication = new System.Windows.Forms.DataGridView();
-            this.colContrindication = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEffetThera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.colRaisSocPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAdrPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTelPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colContactPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCoefNotorietePraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCoefConfiancePraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSpePraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txbCodePraticien = new System.Windows.Forms.TextBox();
+            this.txbRaisonSocPraticien = new System.Windows.Forms.TextBox();
+            this.txbAdressePraticien = new System.Windows.Forms.TextBox();
+            this.txbTelPraticien = new System.Windows.Forms.TextBox();
+            this.txbSpécialitePraticien = new System.Windows.Forms.TextBox();
+            this.txbCoeffConfiancePraticien = new System.Windows.Forms.TextBox();
+            this.txbCoefNotorietePraticien = new System.Windows.Forms.TextBox();
+            this.txbContactPraticien = new System.Windows.Forms.TextBox();
+            this.btnModifierPraticien = new System.Windows.Forms.Button();
+            this.btnAjouterPraticien = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageProduits.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).BeginInit();
+            this.tabPagePraticiens.SuspendLayout();
             this.tabPageVisiteurs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -115,6 +140,82 @@
             this.tabPageProduits.TabIndex = 0;
             this.tabPageProduits.Text = "Produits";
             this.tabPageProduits.UseVisualStyleBackColor = true;
+            // 
+            // dgvContrindication
+            // 
+            this.dgvContrindication.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvContrindication.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colContrindication});
+            this.dgvContrindication.Location = new System.Drawing.Point(384, 284);
+            this.dgvContrindication.Name = "dgvContrindication";
+            this.dgvContrindication.Size = new System.Drawing.Size(334, 150);
+            this.dgvContrindication.TabIndex = 16;
+            // 
+            // colContrindication
+            // 
+            this.colContrindication.HeaderText = "Contrindication";
+            this.colContrindication.Name = "colContrindication";
+            this.colContrindication.Width = 280;
+            // 
+            // dgvEffetThera
+            // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvEffetThera.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEffetThera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEffetThera.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colEffetThera});
+            this.dgvEffetThera.Location = new System.Drawing.Point(16, 284);
+            this.dgvEffetThera.Name = "dgvEffetThera";
+            this.dgvEffetThera.Size = new System.Drawing.Size(334, 150);
+            this.dgvEffetThera.TabIndex = 15;
+            // 
+            // colEffetThera
+            // 
+            this.colEffetThera.HeaderText = "Effets Thérapeutiques";
+            this.colEffetThera.Name = "colEffetThera";
+            this.colEffetThera.Width = 280;
+            // 
+            // dgvInteractionProduit
+            // 
+            this.dgvInteractionProduit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvInteractionProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInteractionProduit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNomProduit,
+            this.colInteractionProduit});
+            this.dgvInteractionProduit.Location = new System.Drawing.Point(16, 128);
+            this.dgvInteractionProduit.Name = "dgvInteractionProduit";
+            this.dgvInteractionProduit.Size = new System.Drawing.Size(702, 150);
+            this.dgvInteractionProduit.TabIndex = 14;
+            // 
+            // colNomProduit
+            // 
+            this.colNomProduit.HeaderText = "Médicament";
+            this.colNomProduit.Name = "colNomProduit";
+            this.colNomProduit.Width = 150;
+            // 
+            // colInteractionProduit
+            // 
+            this.colInteractionProduit.HeaderText = "Interactions";
+            this.colInteractionProduit.Name = "colInteractionProduit";
+            this.colInteractionProduit.Width = 500;
+            // 
+            // lblMedicament
+            // 
+            this.lblMedicament.AutoSize = true;
+            this.lblMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedicament.Location = new System.Drawing.Point(224, 9);
+            this.lblMedicament.Name = "lblMedicament";
+            this.lblMedicament.Size = new System.Drawing.Size(88, 16);
+            this.lblMedicament.TabIndex = 13;
+            this.lblMedicament.Text = "Médicament :";
+            // 
+            // cbxProduit
+            // 
+            this.cbxProduit.FormattingEnabled = true;
+            this.cbxProduit.Location = new System.Drawing.Point(340, 6);
+            this.cbxProduit.Name = "cbxProduit";
+            this.cbxProduit.Size = new System.Drawing.Size(121, 24);
+            this.cbxProduit.TabIndex = 12;
             // 
             // btnModifierProduit
             // 
@@ -218,6 +319,25 @@
             // 
             // tabPagePraticiens
             // 
+            this.tabPagePraticiens.Controls.Add(this.btnAjouterPraticien);
+            this.tabPagePraticiens.Controls.Add(this.btnModifierPraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbSpécialitePraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbCoeffConfiancePraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbCoefNotorietePraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbContactPraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbTelPraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbAdressePraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbRaisonSocPraticien);
+            this.tabPagePraticiens.Controls.Add(this.txbCodePraticien);
+            this.tabPagePraticiens.Controls.Add(this.label13);
+            this.tabPagePraticiens.Controls.Add(this.label12);
+            this.tabPagePraticiens.Controls.Add(this.label11);
+            this.tabPagePraticiens.Controls.Add(this.label10);
+            this.tabPagePraticiens.Controls.Add(this.label9);
+            this.tabPagePraticiens.Controls.Add(this.label8);
+            this.tabPagePraticiens.Controls.Add(this.label7);
+            this.tabPagePraticiens.Controls.Add(this.label6);
+            this.tabPagePraticiens.Controls.Add(this.dataGridView2);
             this.tabPagePraticiens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPagePraticiens.Location = new System.Drawing.Point(4, 24);
             this.tabPagePraticiens.Name = "tabPagePraticiens";
@@ -226,6 +346,7 @@
             this.tabPagePraticiens.TabIndex = 1;
             this.tabPagePraticiens.Text = "Praticiens";
             this.tabPagePraticiens.UseVisualStyleBackColor = true;
+            this.tabPagePraticiens.Click += new System.EventHandler(this.tabPagePraticiens_Click);
             // 
             // tabPageVisiteurs
             // 
@@ -290,105 +411,204 @@
             this.colDateEmbaucheVisiteur.HeaderText = "Date d\'embauche";
             this.colDateEmbaucheVisiteur.Name = "colDateEmbaucheVisiteur";
             // 
-            // cbxProduit
+            // dataGridView2
             // 
-            this.cbxProduit.FormattingEnabled = true;
-            this.cbxProduit.Location = new System.Drawing.Point(340, 6);
-            this.cbxProduit.Name = "cbxProduit";
-            this.cbxProduit.Size = new System.Drawing.Size(121, 24);
-            this.cbxProduit.TabIndex = 12;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colRaisSocPraticien,
+            this.colAdrPraticien,
+            this.colTelPraticien,
+            this.colContactPraticien,
+            this.colCoefNotorietePraticien,
+            this.colCoefConfiancePraticien,
+            this.colSpePraticien});
+            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(745, 298);
+            this.dataGridView2.TabIndex = 0;
             // 
-            // lblMedicament
+            // colRaisSocPraticien
             // 
-            this.lblMedicament.AutoSize = true;
-            this.lblMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedicament.Location = new System.Drawing.Point(224, 9);
-            this.lblMedicament.Name = "lblMedicament";
-            this.lblMedicament.Size = new System.Drawing.Size(88, 16);
-            this.lblMedicament.TabIndex = 13;
-            this.lblMedicament.Text = "Médicament :";
+            this.colRaisSocPraticien.HeaderText = "Raison Sociale Praticien";
+            this.colRaisSocPraticien.Name = "colRaisSocPraticien";
             // 
-            // dgvInteractionProduit
+            // colAdrPraticien
             // 
-            this.dgvInteractionProduit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInteractionProduit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvInteractionProduit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInteractionProduit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNomProduit,
-            this.colInteractionProduit});
-            this.dgvInteractionProduit.Location = new System.Drawing.Point(16, 128);
-            this.dgvInteractionProduit.Name = "dgvInteractionProduit";
-            this.dgvInteractionProduit.Size = new System.Drawing.Size(702, 150);
-            this.dgvInteractionProduit.TabIndex = 14;
+            this.colAdrPraticien.HeaderText = "Adresse";
+            this.colAdrPraticien.Name = "colAdrPraticien";
             // 
-            // dgvEffetThera
+            // colTelPraticien
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvEffetThera.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEffetThera.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvEffetThera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEffetThera.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colEffetThera});
-            this.dgvEffetThera.Location = new System.Drawing.Point(16, 284);
-            this.dgvEffetThera.Name = "dgvEffetThera";
-            this.dgvEffetThera.Size = new System.Drawing.Size(334, 150);
-            this.dgvEffetThera.TabIndex = 15;
+            this.colTelPraticien.HeaderText = "Telephone";
+            this.colTelPraticien.Name = "colTelPraticien";
             // 
-            // colNomProduit
+            // colContactPraticien
             // 
-            this.colNomProduit.HeaderText = "Médicament";
-            this.colNomProduit.Name = "colNomProduit";
-            this.colNomProduit.Width = 150;
+            this.colContactPraticien.HeaderText = "Contact";
+            this.colContactPraticien.Name = "colContactPraticien";
             // 
-            // colInteractionProduit
+            // colCoefNotorietePraticien
             // 
-            this.colInteractionProduit.HeaderText = "Interactions";
-            this.colInteractionProduit.Name = "colInteractionProduit";
-            this.colInteractionProduit.Width = 500;
+            this.colCoefNotorietePraticien.HeaderText = "Coefficient Notoriété";
+            this.colCoefNotorietePraticien.Name = "colCoefNotorietePraticien";
             // 
-            // dgvContrindication
+            // colCoefConfiancePraticien
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvContrindication.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvContrindication.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContrindication.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colContrindication});
-            this.dgvContrindication.Location = new System.Drawing.Point(384, 284);
-            this.dgvContrindication.Name = "dgvContrindication";
-            this.dgvContrindication.Size = new System.Drawing.Size(334, 150);
-            this.dgvContrindication.TabIndex = 16;
+            this.colCoefConfiancePraticien.HeaderText = "Coefficient Confiance";
+            this.colCoefConfiancePraticien.Name = "colCoefConfiancePraticien";
             // 
-            // colContrindication
+            // colSpePraticien
             // 
-            this.colContrindication.HeaderText = "Contrindication";
-            this.colContrindication.Name = "colContrindication";
-            this.colContrindication.Width = 280;
+            this.colSpePraticien.HeaderText = "Spécialité";
+            this.colSpePraticien.Name = "colSpePraticien";
             // 
-            // colEffetThera
+            // label6
             // 
-            this.colEffetThera.HeaderText = "Effets Thérapeutiques";
-            this.colEffetThera.Name = "colEffetThera";
-            this.colEffetThera.Width = 280;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 313);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 16);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Code praticien";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 341);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 16);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Raison Sociale";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(18, 369);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(66, 16);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Adresse";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 399);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 16);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Téléphone";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(294, 313);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 16);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Contact";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(294, 341);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(146, 16);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Coefficient notoriété";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(294, 369);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(152, 16);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Coefficient confiance";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(294, 397);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(78, 16);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Spécialité";
+            // 
+            // txbCodePraticien
+            // 
+            this.txbCodePraticien.Location = new System.Drawing.Point(133, 310);
+            this.txbCodePraticien.Name = "txbCodePraticien";
+            this.txbCodePraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbCodePraticien.TabIndex = 9;
+            // 
+            // txbRaisonSocPraticien
+            // 
+            this.txbRaisonSocPraticien.Location = new System.Drawing.Point(133, 338);
+            this.txbRaisonSocPraticien.Name = "txbRaisonSocPraticien";
+            this.txbRaisonSocPraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbRaisonSocPraticien.TabIndex = 10;
+            // 
+            // txbAdressePraticien
+            // 
+            this.txbAdressePraticien.Location = new System.Drawing.Point(133, 366);
+            this.txbAdressePraticien.Name = "txbAdressePraticien";
+            this.txbAdressePraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbAdressePraticien.TabIndex = 11;
+            // 
+            // txbTelPraticien
+            // 
+            this.txbTelPraticien.Location = new System.Drawing.Point(133, 394);
+            this.txbTelPraticien.Name = "txbTelPraticien";
+            this.txbTelPraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbTelPraticien.TabIndex = 12;
+            // 
+            // txbSpécialitePraticien
+            // 
+            this.txbSpécialitePraticien.Location = new System.Drawing.Point(450, 394);
+            this.txbSpécialitePraticien.Name = "txbSpécialitePraticien";
+            this.txbSpécialitePraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbSpécialitePraticien.TabIndex = 16;
+            // 
+            // txbCoeffConfiancePraticien
+            // 
+            this.txbCoeffConfiancePraticien.Location = new System.Drawing.Point(450, 366);
+            this.txbCoeffConfiancePraticien.Name = "txbCoeffConfiancePraticien";
+            this.txbCoeffConfiancePraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbCoeffConfiancePraticien.TabIndex = 15;
+            // 
+            // txbCoefNotorietePraticien
+            // 
+            this.txbCoefNotorietePraticien.Location = new System.Drawing.Point(450, 338);
+            this.txbCoefNotorietePraticien.Name = "txbCoefNotorietePraticien";
+            this.txbCoefNotorietePraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbCoefNotorietePraticien.TabIndex = 14;
+            // 
+            // txbContactPraticien
+            // 
+            this.txbContactPraticien.Location = new System.Drawing.Point(450, 310);
+            this.txbContactPraticien.Name = "txbContactPraticien";
+            this.txbContactPraticien.Size = new System.Drawing.Size(100, 22);
+            this.txbContactPraticien.TabIndex = 13;
+            // 
+            // btnModifierPraticien
+            // 
+            this.btnModifierPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifierPraticien.Location = new System.Drawing.Point(568, 310);
+            this.btnModifierPraticien.Name = "btnModifierPraticien";
+            this.btnModifierPraticien.Size = new System.Drawing.Size(183, 50);
+            this.btnModifierPraticien.TabIndex = 17;
+            this.btnModifierPraticien.Text = "Modifier";
+            this.btnModifierPraticien.UseVisualStyleBackColor = true;
+            // 
+            // btnAjouterPraticien
+            // 
+            this.btnAjouterPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterPraticien.Location = new System.Drawing.Point(568, 366);
+            this.btnAjouterPraticien.Name = "btnAjouterPraticien";
+            this.btnAjouterPraticien.Size = new System.Drawing.Size(183, 50);
+            this.btnAjouterPraticien.TabIndex = 18;
+            this.btnAjouterPraticien.Text = "Ajouter un Praticien";
+            this.btnAjouterPraticien.UseVisualStyleBackColor = true;
             // 
             // FrmAppli
             // 
@@ -403,11 +623,14 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageProduits.ResumeLayout(false);
             this.tabPageProduits.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).EndInit();
+            this.tabPagePraticiens.ResumeLayout(false);
+            this.tabPagePraticiens.PerformLayout();
             this.tabPageVisiteurs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -446,5 +669,31 @@
         private System.Windows.Forms.DataGridView dgvInteractionProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colInteractionProduit;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRaisSocPraticien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAdrPraticien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTelPraticien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colContactPraticien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCoefNotorietePraticien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCoefConfiancePraticien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSpePraticien;
+        private System.Windows.Forms.TextBox txbSpécialitePraticien;
+        private System.Windows.Forms.TextBox txbCoeffConfiancePraticien;
+        private System.Windows.Forms.TextBox txbCoefNotorietePraticien;
+        private System.Windows.Forms.TextBox txbContactPraticien;
+        private System.Windows.Forms.TextBox txbTelPraticien;
+        private System.Windows.Forms.TextBox txbAdressePraticien;
+        private System.Windows.Forms.TextBox txbRaisonSocPraticien;
+        private System.Windows.Forms.TextBox txbCodePraticien;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAjouterPraticien;
+        private System.Windows.Forms.Button btnModifierPraticien;
     }
 }

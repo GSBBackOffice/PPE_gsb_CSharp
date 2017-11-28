@@ -16,5 +16,10 @@ namespace GSB_Back_Office
         {
             InitializeComponent();
         }
+
+        private void tabPagePraticiens_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblIdentification = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,12 +62,13 @@
             // 
             this.txbPassword.Location = new System.Drawing.Point(111, 85);
             this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '•';
             this.txbPassword.Size = new System.Drawing.Size(139, 20);
             this.txbPassword.TabIndex = 2;
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(12, 120);
+            this.btnConnect.Location = new System.Drawing.Point(12, 130);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(238, 33);
             this.btnConnect.TabIndex = 3;
@@ -102,12 +104,21 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // lblIdentification
+            // 
+            this.lblIdentification.AutoSize = true;
+            this.lblIdentification.Location = new System.Drawing.Point(71, 114);
+            this.lblIdentification.Name = "lblIdentification";
+            this.lblIdentification.Size = new System.Drawing.Size(0, 13);
+            this.lblIdentification.TabIndex = 7;
+            // 
             // FrmIdentification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(277, 165);
+            this.ClientSize = new System.Drawing.Size(277, 175);
+            this.Controls.Add(this.lblIdentification);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -132,6 +143,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblIdentification;
     }
 }
 

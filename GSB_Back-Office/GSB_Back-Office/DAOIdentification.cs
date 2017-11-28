@@ -19,7 +19,7 @@ namespace GSB_Back_Office
             int i = 0;
             try
             {
-                String req = "select * COUCOUfrom login where login='" + id + "' and password='" + password + "'";
+                String req = "select * from gestionnaire where loginGestionnaire='" + id + "' and mdpGestionnaire='" + password + "'";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
@@ -28,17 +28,15 @@ namespace GSB_Back_Office
                 {
                     i = i++;
                 }
-                if (i != 0)
-                {
-                    return true;
-                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERREUR : " + ex);
             }
+            if (i != 0){return true;}
+            else {return false; }
             
         }
-        
+
     }
 }

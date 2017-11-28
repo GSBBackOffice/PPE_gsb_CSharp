@@ -8,11 +8,10 @@ namespace GSB_Back_Office
 {
     class Identification
     {
-        public String login;
-        public String password;
-        public void verifConnexion(String unLogin, String unPassword)
+        DAOIdentification id = new DAOIdentification();
+        public bool verifConnexion(String unLogin, String unPassword)
         {
-                
+            return id.verifConnect(unLogin, unPassword);             
         }
     }
 }

@@ -21,5 +21,11 @@ namespace GSB_Back_Office
         {
 
         }
+
+        private void btnAjouterPraticien_Click(object sender, EventArgs e)
+        {
+            FrmAjoutPraticien frmAjoutPRaticien = new FrmAjoutPraticien();
+            frmAjoutPRaticien.Show();
+        }
     }
 }

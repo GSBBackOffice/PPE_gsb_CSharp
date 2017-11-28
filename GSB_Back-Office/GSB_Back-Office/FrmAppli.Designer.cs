@@ -609,6 +609,7 @@
             this.btnAjouterPraticien.TabIndex = 18;
             this.btnAjouterPraticien.Text = "Ajouter un Praticien";
             this.btnAjouterPraticien.UseVisualStyleBackColor = true;
+            this.btnAjouterPraticien.Click += new System.EventHandler(this.btnAjouterPraticien_Click);
             // 
             // FrmAppli
             // 

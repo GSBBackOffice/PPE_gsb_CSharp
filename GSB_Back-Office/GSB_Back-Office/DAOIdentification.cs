@@ -12,8 +12,7 @@ using System.Data.SqlClient;
 namespace GSB_Back_Office
 {
     class DAOIdentification
-    {
-        
+    {        
         public bool verifConnect(String id, String password)
         {
             int i = 0;

@@ -48,6 +48,13 @@
   <ItemGroup>
     <Compile Include="DAOFactory.cs" />
     <Compile Include="DAOIdentification.cs" />
+    <Compile Include="DAOPraticien.cs" />
+    <Compile Include="FrmAjoutPraticien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutPraticien.Designer.cs">
+      <DependentUpon>FrmAjoutPraticien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIdentification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,8 +68,12 @@
       <DependentUpon>FrmAppli.cs</DependentUpon>
     </Compile>
     <Compile Include="Identification.cs" />
+    <Compile Include="Praticien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAjoutPraticien.resx">
+      <DependentUpon>FrmAjoutPraticien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAppli.resx">
       <DependentUpon>FrmAppli.cs</DependentUpon>
     </EmbeddedResource>

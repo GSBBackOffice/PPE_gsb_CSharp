@@ -63,7 +63,7 @@ namespace GSB_Back_Office
             
                 foreach(Visiteur v in Visiteur.lesVisiteurs)
             {
-                dgvVisiteur.Rows.Add(v.NumVisiteur, v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche);
+                dgvVisiteur.Rows.Add( v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche , v.SecteurVisiteur);
             }
         }
     }

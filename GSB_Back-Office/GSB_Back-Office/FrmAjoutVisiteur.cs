@@ -12,6 +12,7 @@ namespace GSB_Back_Office
 {
     public partial class FrmAjoutVisiteur : Form
     {
+        
         public FrmAjoutVisiteur()
         {
             InitializeComponent();
@@ -19,8 +20,9 @@ namespace GSB_Back_Office
 
         private void btnAjoutVisiteur_Click(object sender, EventArgs e)
         {
-            Visiteur visiteur = new Visiteur(txbNumVisiteurAjout.Text, txbNomVisiteurAjout.Text, txbPrenomVisiteurAjout.Text,
-                txbAdresseVisiteurAjout.Text, txbCPVisiteurAjout.Text, txbVilleVisiteurAjout.Text, txbDateEmbaucheVisiteurAjout.Text, cbxAjoutSecteurVisiteur.Text);
+
+            Visiteur visiteur = new Visiteur(txbNomVisiteurAjout.Text, txbPrenomVisiteurAjout.Text,
+                txbAdresseVisiteurAjout.Text, txbCPVisiteurAjout.Text, txbVilleVisiteurAjout.Text, dtpEmbauche.Value ,cbxAjoutSecteurVisiteur.Text);
             Visiteur.ajouterVisiteur(visiteur);
           
              
@@ -31,6 +33,21 @@ namespace GSB_Back_Office
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbVilleVisiteurAjout_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbDateEmbaucheVisiteurAjout_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

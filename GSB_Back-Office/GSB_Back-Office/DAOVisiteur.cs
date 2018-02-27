@@ -28,7 +28,7 @@ namespace GSB_Back_Office
         {
             try
             {
-                String req = "INSERT INTO Visiteur Values ('" + visiteur.NumVisiteur + "', '" + visiteur.NomVisiteur + "', '" + visiteur.PrenomVisiteur 
+                String req = "INSERT INTO Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche,numSecteur)  Values ('" + visiteur.NomVisiteur + "', '" + visiteur.PrenomVisiteur 
                     + "','" + visiteur.Adresse + "','" + visiteur.CpVisiteur + "','" + visiteur.VilleVisiteur + "','" + visiteur.DateEmbauche + "', '" + visiteur.SecteurVisiteur + "')";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
@@ -44,8 +44,8 @@ namespace GSB_Back_Office
         {
             try
             {
-                String req = "UPDATE Visiteur SET numVisiteur = '" + visiteur.NumVisiteur + "', nomVisiteur = '" + visiteur.NomVisiteur + "', prenomVisiteur = '" + visiteur.PrenomVisiteur
-                    + "', adresse = '" + visiteur.Adresse + "', cpVisiteur = '" + visiteur.CpVisiteur + "', villeVisiteur = '" + visiteur.VilleVisiteur + "', dateEmbauche = '" + visiteur.DateEmbauche + "', descriptionSecteur = '" + visiteur.SecteurVisiteur+ "'";
+                String req = "UPDATE Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche" +/*,numSecteur*/") SET nomVisiteur = '" + visiteur.NomVisiteur + "', prenomVisiteur = '" + visiteur.PrenomVisiteur
+                    + "', adresse = '" + visiteur.Adresse + "', cpVisiteur = '" + visiteur.CpVisiteur + "', villeVisiteur = '" + visiteur.VilleVisiteur + "', dateEmbauche = '" + visiteur.DateEmbauche +"', descriptionSecteur = '" + visiteur.SecteurVisiteur + "'";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();

@@ -33,13 +33,25 @@ namespace GSB_Back_Office
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
-                rs = db.execSQLread(req);
+                db.execSQLwrite(req);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
+        public void affichPraticien()
+        {
+            String req = "SELECT * FROM Praticien";
+            SqlDataReader rs;
+            DAOFactory db = new DAOFactory();
+            db.connect();
+            rs = db.execSQLread(req);
+            foreach (){
+
+            }
+        }
+
 
 
 

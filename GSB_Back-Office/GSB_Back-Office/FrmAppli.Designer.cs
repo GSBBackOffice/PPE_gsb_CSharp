@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAppli));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabProduits = new System.Windows.Forms.TabControl();
             this.tabPageProduits = new System.Windows.Forms.TabPage();
             this.dgvContrindication = new System.Windows.Forms.DataGridView();
             this.colContrindication = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,7 +103,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl1.SuspendLayout();
+            this.tabProduits.SuspendLayout();
             this.tabPageProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).BeginInit();
@@ -114,20 +114,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabProduits
             // 
-            this.tabControl1.Controls.Add(this.tabPageProduits);
-            this.tabControl1.Controls.Add(this.tabPagePraticiens);
-            this.tabControl1.Controls.Add(this.tabPageVisiteurs);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.ItemSize = new System.Drawing.Size(60, 20);
-            this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Padding = new System.Drawing.Point(20, 3);
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1020, 604);
-            this.tabControl1.TabIndex = 0;
+            this.tabProduits.Controls.Add(this.tabPageProduits);
+            this.tabProduits.Controls.Add(this.tabPagePraticiens);
+            this.tabProduits.Controls.Add(this.tabPageVisiteurs);
+            this.tabProduits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabProduits.ItemSize = new System.Drawing.Size(60, 20);
+            this.tabProduits.Location = new System.Drawing.Point(12, 12);
+            this.tabProduits.Name = "tabProduits";
+            this.tabProduits.Padding = new System.Drawing.Point(20, 3);
+            this.tabProduits.SelectedIndex = 0;
+            this.tabProduits.Size = new System.Drawing.Size(765, 491);
+            this.tabProduits.TabIndex = 0;
+            this.tabProduits.Enter += new System.EventHandler(this.tabControl1_Enter);
             // 
             // tabPageProduits
             // 
@@ -150,10 +150,9 @@
             this.tabPageProduits.Controls.Add(this.label1);
             this.tabPageProduits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageProduits.Location = new System.Drawing.Point(4, 24);
-            this.tabPageProduits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageProduits.Name = "tabPageProduits";
-            this.tabPageProduits.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPageProduits.Size = new System.Drawing.Size(1012, 576);
+            this.tabPageProduits.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageProduits.Size = new System.Drawing.Size(757, 463);
             this.tabPageProduits.TabIndex = 0;
             this.tabPageProduits.Text = "Produits";
             this.tabPageProduits.UseVisualStyleBackColor = true;
@@ -163,10 +162,9 @@
             this.dgvContrindication.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContrindication.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colContrindication});
-            this.dgvContrindication.Location = new System.Drawing.Point(512, 350);
-            this.dgvContrindication.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvContrindication.Location = new System.Drawing.Point(384, 284);
             this.dgvContrindication.Name = "dgvContrindication";
-            this.dgvContrindication.Size = new System.Drawing.Size(445, 185);
+            this.dgvContrindication.Size = new System.Drawing.Size(334, 150);
             this.dgvContrindication.TabIndex = 16;
             // 
             // colContrindication
@@ -182,10 +180,9 @@
             this.dgvEffetThera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEffetThera.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colEffetThera});
-            this.dgvEffetThera.Location = new System.Drawing.Point(21, 350);
-            this.dgvEffetThera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvEffetThera.Location = new System.Drawing.Point(16, 284);
             this.dgvEffetThera.Name = "dgvEffetThera";
-            this.dgvEffetThera.Size = new System.Drawing.Size(445, 185);
+            this.dgvEffetThera.Size = new System.Drawing.Size(334, 150);
             this.dgvEffetThera.TabIndex = 15;
             // 
             // colEffetThera
@@ -201,10 +198,9 @@
             this.dgvInteractionProduit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNomProduit,
             this.colInteractionProduit});
-            this.dgvInteractionProduit.Location = new System.Drawing.Point(21, 158);
-            this.dgvInteractionProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvInteractionProduit.Location = new System.Drawing.Point(16, 128);
             this.dgvInteractionProduit.Name = "dgvInteractionProduit";
-            this.dgvInteractionProduit.Size = new System.Drawing.Size(936, 185);
+            this.dgvInteractionProduit.Size = new System.Drawing.Size(702, 150);
             this.dgvInteractionProduit.TabIndex = 14;
             // 
             // colNomProduit
@@ -223,29 +219,26 @@
             // 
             this.lblMedicament.AutoSize = true;
             this.lblMedicament.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedicament.Location = new System.Drawing.Point(299, 11);
-            this.lblMedicament.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMedicament.Location = new System.Drawing.Point(224, 9);
             this.lblMedicament.Name = "lblMedicament";
-            this.lblMedicament.Size = new System.Drawing.Size(110, 20);
+            this.lblMedicament.Size = new System.Drawing.Size(88, 16);
             this.lblMedicament.TabIndex = 13;
             this.lblMedicament.Text = "Médicament :";
             // 
             // cbxProduit
             // 
             this.cbxProduit.FormattingEnabled = true;
-            this.cbxProduit.Location = new System.Drawing.Point(453, 7);
-            this.cbxProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxProduit.Location = new System.Drawing.Point(340, 6);
             this.cbxProduit.Name = "cbxProduit";
-            this.cbxProduit.Size = new System.Drawing.Size(160, 28);
+            this.cbxProduit.Size = new System.Drawing.Size(121, 24);
             this.cbxProduit.TabIndex = 12;
             // 
             // btnModifierProduit
             // 
             this.btnModifierProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifierProduit.Location = new System.Drawing.Point(529, 111);
-            this.btnModifierProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModifierProduit.Location = new System.Drawing.Point(397, 90);
             this.btnModifierProduit.Name = "btnModifierProduit";
-            this.btnModifierProduit.Size = new System.Drawing.Size(303, 28);
+            this.btnModifierProduit.Size = new System.Drawing.Size(227, 23);
             this.btnModifierProduit.TabIndex = 10;
             this.btnModifierProduit.Text = "Modifier";
             this.btnModifierProduit.UseVisualStyleBackColor = true;
@@ -253,56 +246,50 @@
             // txbPrixEchantillonProduit
             // 
             this.txbPrixEchantillonProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPrixEchantillonProduit.Location = new System.Drawing.Point(699, 76);
-            this.txbPrixEchantillonProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPrixEchantillonProduit.Location = new System.Drawing.Point(524, 62);
             this.txbPrixEchantillonProduit.Name = "txbPrixEchantillonProduit";
-            this.txbPrixEchantillonProduit.Size = new System.Drawing.Size(132, 26);
+            this.txbPrixEchantillonProduit.Size = new System.Drawing.Size(100, 22);
             this.txbPrixEchantillonProduit.TabIndex = 9;
             // 
             // txbPrixVenteProduit
             // 
             this.txbPrixVenteProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPrixVenteProduit.Location = new System.Drawing.Point(699, 42);
-            this.txbPrixVenteProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPrixVenteProduit.Location = new System.Drawing.Point(524, 34);
             this.txbPrixVenteProduit.Name = "txbPrixVenteProduit";
-            this.txbPrixVenteProduit.Size = new System.Drawing.Size(132, 26);
+            this.txbPrixVenteProduit.Size = new System.Drawing.Size(100, 22);
             this.txbPrixVenteProduit.TabIndex = 8;
             // 
             // txbDosageProduit
             // 
             this.txbDosageProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbDosageProduit.Location = new System.Drawing.Point(272, 111);
-            this.txbDosageProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbDosageProduit.Location = new System.Drawing.Point(204, 90);
             this.txbDosageProduit.Name = "txbDosageProduit";
-            this.txbDosageProduit.Size = new System.Drawing.Size(132, 26);
+            this.txbDosageProduit.Size = new System.Drawing.Size(100, 22);
             this.txbDosageProduit.TabIndex = 7;
             // 
             // txbPresentationProduit
             // 
             this.txbPresentationProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPresentationProduit.Location = new System.Drawing.Point(272, 76);
-            this.txbPresentationProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPresentationProduit.Location = new System.Drawing.Point(204, 62);
             this.txbPresentationProduit.Name = "txbPresentationProduit";
-            this.txbPresentationProduit.Size = new System.Drawing.Size(132, 26);
+            this.txbPresentationProduit.Size = new System.Drawing.Size(100, 22);
             this.txbPresentationProduit.TabIndex = 6;
             // 
             // txbNomProduit
             // 
             this.txbNomProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNomProduit.Location = new System.Drawing.Point(272, 42);
-            this.txbNomProduit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNomProduit.Location = new System.Drawing.Point(204, 34);
             this.txbNomProduit.Name = "txbNomProduit";
-            this.txbNomProduit.Size = new System.Drawing.Size(132, 26);
+            this.txbNomProduit.Size = new System.Drawing.Size(100, 22);
             this.txbNomProduit.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(525, 82);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(394, 67);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 17);
+            this.label5.Size = new System.Drawing.Size(85, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Prix Echantillon :";
             // 
@@ -310,10 +297,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(525, 48);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(394, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 17);
+            this.label4.Size = new System.Drawing.Size(100, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Prixe de Vente HT :";
             // 
@@ -321,10 +307,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(168, 117);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(126, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 17);
+            this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dosage :";
             // 
@@ -332,10 +317,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(168, 82);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(126, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 17);
+            this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Présentation :";
             // 
@@ -343,10 +327,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(126, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nom :";
             // 
@@ -373,10 +356,9 @@
             this.tabPagePraticiens.Controls.Add(this.dataGridView2);
             this.tabPagePraticiens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPagePraticiens.Location = new System.Drawing.Point(4, 24);
-            this.tabPagePraticiens.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPagePraticiens.Name = "tabPagePraticiens";
-            this.tabPagePraticiens.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPagePraticiens.Size = new System.Drawing.Size(1012, 576);
+            this.tabPagePraticiens.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPagePraticiens.Size = new System.Drawing.Size(757, 463);
             this.tabPagePraticiens.TabIndex = 1;
             this.tabPagePraticiens.Text = "Praticiens";
             this.tabPagePraticiens.UseVisualStyleBackColor = true;
@@ -385,10 +367,9 @@
             // btnAjouterPraticien
             // 
             this.btnAjouterPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouterPraticien.Location = new System.Drawing.Point(757, 450);
-            this.btnAjouterPraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAjouterPraticien.Location = new System.Drawing.Point(568, 366);
             this.btnAjouterPraticien.Name = "btnAjouterPraticien";
-            this.btnAjouterPraticien.Size = new System.Drawing.Size(244, 62);
+            this.btnAjouterPraticien.Size = new System.Drawing.Size(183, 50);
             this.btnAjouterPraticien.TabIndex = 18;
             this.btnAjouterPraticien.Text = "Ajouter un Praticien";
             this.btnAjouterPraticien.UseVisualStyleBackColor = true;
@@ -397,155 +378,138 @@
             // btnModifierPraticien
             // 
             this.btnModifierPraticien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifierPraticien.Location = new System.Drawing.Point(757, 382);
-            this.btnModifierPraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModifierPraticien.Location = new System.Drawing.Point(568, 310);
             this.btnModifierPraticien.Name = "btnModifierPraticien";
-            this.btnModifierPraticien.Size = new System.Drawing.Size(244, 62);
+            this.btnModifierPraticien.Size = new System.Drawing.Size(183, 50);
             this.btnModifierPraticien.TabIndex = 17;
             this.btnModifierPraticien.Text = "Modifier";
             this.btnModifierPraticien.UseVisualStyleBackColor = true;
             // 
             // txbSpécialitePraticien
             // 
-            this.txbSpécialitePraticien.Location = new System.Drawing.Point(600, 485);
-            this.txbSpécialitePraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSpécialitePraticien.Location = new System.Drawing.Point(450, 394);
             this.txbSpécialitePraticien.Name = "txbSpécialitePraticien";
-            this.txbSpécialitePraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbSpécialitePraticien.Size = new System.Drawing.Size(100, 22);
             this.txbSpécialitePraticien.TabIndex = 16;
             // 
             // txbCoeffConfiancePraticien
             // 
-            this.txbCoeffConfiancePraticien.Location = new System.Drawing.Point(600, 450);
-            this.txbCoeffConfiancePraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCoeffConfiancePraticien.Location = new System.Drawing.Point(450, 366);
             this.txbCoeffConfiancePraticien.Name = "txbCoeffConfiancePraticien";
-            this.txbCoeffConfiancePraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbCoeffConfiancePraticien.Size = new System.Drawing.Size(100, 22);
             this.txbCoeffConfiancePraticien.TabIndex = 15;
             // 
             // txbCoefNotorietePraticien
             // 
-            this.txbCoefNotorietePraticien.Location = new System.Drawing.Point(600, 416);
-            this.txbCoefNotorietePraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCoefNotorietePraticien.Location = new System.Drawing.Point(450, 338);
             this.txbCoefNotorietePraticien.Name = "txbCoefNotorietePraticien";
-            this.txbCoefNotorietePraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbCoefNotorietePraticien.Size = new System.Drawing.Size(100, 22);
             this.txbCoefNotorietePraticien.TabIndex = 14;
             // 
             // txbContactPraticien
             // 
-            this.txbContactPraticien.Location = new System.Drawing.Point(600, 382);
-            this.txbContactPraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbContactPraticien.Location = new System.Drawing.Point(450, 310);
             this.txbContactPraticien.Name = "txbContactPraticien";
-            this.txbContactPraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbContactPraticien.Size = new System.Drawing.Size(100, 22);
             this.txbContactPraticien.TabIndex = 13;
             // 
             // txbTelPraticien
             // 
-            this.txbTelPraticien.Location = new System.Drawing.Point(177, 485);
-            this.txbTelPraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbTelPraticien.Location = new System.Drawing.Point(133, 394);
             this.txbTelPraticien.Name = "txbTelPraticien";
-            this.txbTelPraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbTelPraticien.Size = new System.Drawing.Size(100, 22);
             this.txbTelPraticien.TabIndex = 12;
             // 
             // txbAdressePraticien
             // 
-            this.txbAdressePraticien.Location = new System.Drawing.Point(177, 450);
-            this.txbAdressePraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbAdressePraticien.Location = new System.Drawing.Point(133, 366);
             this.txbAdressePraticien.Name = "txbAdressePraticien";
-            this.txbAdressePraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbAdressePraticien.Size = new System.Drawing.Size(100, 22);
             this.txbAdressePraticien.TabIndex = 11;
             // 
             // txbRaisonSocPraticien
             // 
-            this.txbRaisonSocPraticien.Location = new System.Drawing.Point(177, 416);
-            this.txbRaisonSocPraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbRaisonSocPraticien.Location = new System.Drawing.Point(133, 338);
             this.txbRaisonSocPraticien.Name = "txbRaisonSocPraticien";
-            this.txbRaisonSocPraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbRaisonSocPraticien.Size = new System.Drawing.Size(100, 22);
             this.txbRaisonSocPraticien.TabIndex = 10;
             // 
             // txbCodePraticien
             // 
-            this.txbCodePraticien.Location = new System.Drawing.Point(177, 382);
-            this.txbCodePraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCodePraticien.Location = new System.Drawing.Point(133, 310);
             this.txbCodePraticien.Name = "txbCodePraticien";
-            this.txbCodePraticien.Size = new System.Drawing.Size(132, 26);
+            this.txbCodePraticien.Size = new System.Drawing.Size(100, 22);
             this.txbCodePraticien.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(392, 489);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(294, 397);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 20);
+            this.label13.Size = new System.Drawing.Size(78, 16);
             this.label13.TabIndex = 8;
             this.label13.Text = "Spécialité";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(392, 454);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(294, 369);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(187, 20);
+            this.label12.Size = new System.Drawing.Size(152, 16);
             this.label12.TabIndex = 7;
             this.label12.Text = "Coefficient confiance";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(392, 420);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(294, 341);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(180, 20);
+            this.label11.Size = new System.Drawing.Size(146, 16);
             this.label11.TabIndex = 6;
             this.label11.Text = "Coefficient notoriété";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(392, 385);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(294, 313);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 20);
+            this.label10.Size = new System.Drawing.Size(60, 16);
             this.label10.TabIndex = 5;
             this.label10.Text = "Contact";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(24, 491);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(18, 399);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 20);
+            this.label9.Size = new System.Drawing.Size(83, 16);
             this.label9.TabIndex = 4;
             this.label9.Text = "Téléphone";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 454);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(18, 369);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 20);
+            this.label8.Size = new System.Drawing.Size(66, 16);
             this.label8.TabIndex = 3;
             this.label8.Text = "Adresse";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 420);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(18, 341);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(135, 20);
+            this.label7.Size = new System.Drawing.Size(114, 16);
             this.label7.TabIndex = 2;
             this.label7.Text = "Raison Sociale";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 385);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(18, 313);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 20);
+            this.label6.Size = new System.Drawing.Size(109, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Code praticien";
             // 
@@ -560,10 +524,9 @@
             this.colCoefNotorietePraticien,
             this.colCoefConfiancePraticien,
             this.colSpePraticien});
-            this.dataGridView2.Location = new System.Drawing.Point(8, 7);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(993, 367);
+            this.dataGridView2.Size = new System.Drawing.Size(745, 298);
             this.dataGridView2.TabIndex = 0;
             // 
             // colRaisSocPraticien
@@ -621,10 +584,9 @@
             this.tabPageVisiteurs.Controls.Add(this.label21);
             this.tabPageVisiteurs.Controls.Add(this.dgvVisiteur);
             this.tabPageVisiteurs.Location = new System.Drawing.Point(4, 24);
-            this.tabPageVisiteurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageVisiteurs.Name = "tabPageVisiteurs";
-            this.tabPageVisiteurs.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPageVisiteurs.Size = new System.Drawing.Size(1012, 576);
+            this.tabPageVisiteurs.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageVisiteurs.Size = new System.Drawing.Size(757, 463);
             this.tabPageVisiteurs.TabIndex = 2;
             this.tabPageVisiteurs.Text = "Visiteurs";
             this.tabPageVisiteurs.UseVisualStyleBackColor = true;
@@ -633,10 +595,9 @@
             // btnAddV
             // 
             this.btnAddV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddV.Location = new System.Drawing.Point(748, 473);
-            this.btnAddV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddV.Location = new System.Drawing.Point(561, 384);
             this.btnAddV.Name = "btnAddV";
-            this.btnAddV.Size = new System.Drawing.Size(244, 62);
+            this.btnAddV.Size = new System.Drawing.Size(183, 50);
             this.btnAddV.TabIndex = 36;
             this.btnAddV.Text = "Ajouter un Visiteur";
             this.btnAddV.UseVisualStyleBackColor = true;
@@ -645,10 +606,9 @@
             // btn_ModifV
             // 
             this.btn_ModifV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ModifV.Location = new System.Drawing.Point(748, 404);
-            this.btn_ModifV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ModifV.Location = new System.Drawing.Point(561, 328);
             this.btn_ModifV.Name = "btn_ModifV";
-            this.btn_ModifV.Size = new System.Drawing.Size(244, 62);
+            this.btn_ModifV.Size = new System.Drawing.Size(183, 50);
             this.btn_ModifV.TabIndex = 35;
             this.btn_ModifV.Text = "Modifier";
             this.btn_ModifV.UseVisualStyleBackColor = true;
@@ -656,127 +616,113 @@
             // 
             // txbDateEmbaucheVisiteur
             // 
-            this.txbDateEmbaucheVisiteur.Location = new System.Drawing.Point(591, 473);
-            this.txbDateEmbaucheVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbDateEmbaucheVisiteur.Location = new System.Drawing.Point(443, 384);
             this.txbDateEmbaucheVisiteur.Name = "txbDateEmbaucheVisiteur";
-            this.txbDateEmbaucheVisiteur.Size = new System.Drawing.Size(132, 26);
+            this.txbDateEmbaucheVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbDateEmbaucheVisiteur.TabIndex = 33;
             // 
             // txbVilleVisiteur
             // 
-            this.txbVilleVisiteur.Location = new System.Drawing.Point(591, 438);
-            this.txbVilleVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbVilleVisiteur.Location = new System.Drawing.Point(443, 356);
             this.txbVilleVisiteur.Name = "txbVilleVisiteur";
-            this.txbVilleVisiteur.Size = new System.Drawing.Size(132, 26);
+            this.txbVilleVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbVilleVisiteur.TabIndex = 32;
             // 
             // txbCPVisiteur
             // 
-            this.txbCPVisiteur.Location = new System.Drawing.Point(591, 404);
-            this.txbCPVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCPVisiteur.Location = new System.Drawing.Point(443, 328);
             this.txbCPVisiteur.Name = "txbCPVisiteur";
-            this.txbCPVisiteur.Size = new System.Drawing.Size(132, 26);
+            this.txbCPVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbCPVisiteur.TabIndex = 31;
             // 
             // txbAdresseVisiteur
             // 
-            this.txbAdresseVisiteur.Location = new System.Drawing.Point(168, 507);
-            this.txbAdresseVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbAdresseVisiteur.Location = new System.Drawing.Point(126, 412);
             this.txbAdresseVisiteur.Name = "txbAdresseVisiteur";
-            this.txbAdresseVisiteur.Size = new System.Drawing.Size(132, 26);
+            this.txbAdresseVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbAdresseVisiteur.TabIndex = 30;
             // 
             // txbPrenomVisiteur
             // 
-            this.txbPrenomVisiteur.Location = new System.Drawing.Point(168, 473);
-            this.txbPrenomVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPrenomVisiteur.Location = new System.Drawing.Point(126, 384);
             this.txbPrenomVisiteur.Name = "txbPrenomVisiteur";
-            this.txbPrenomVisiteur.Size = new System.Drawing.Size(132, 26);
+            this.txbPrenomVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbPrenomVisiteur.TabIndex = 29;
             // 
             // txbNomVisiteur
             // 
-            this.txbNomVisiteur.Location = new System.Drawing.Point(168, 438);
-            this.txbNomVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNomVisiteur.Location = new System.Drawing.Point(126, 356);
             this.txbNomVisiteur.Name = "txbNomVisiteur";
-            this.txbNomVisiteur.Size = new System.Drawing.Size(132, 26);
+            this.txbNomVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbNomVisiteur.TabIndex = 28;
             // 
             // txbNumVisteur
             // 
-            this.txbNumVisteur.Location = new System.Drawing.Point(168, 404);
-            this.txbNumVisteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNumVisteur.Location = new System.Drawing.Point(126, 328);
             this.txbNumVisteur.Name = "txbNumVisteur";
-            this.txbNumVisteur.Size = new System.Drawing.Size(132, 26);
+            this.txbNumVisteur.Size = new System.Drawing.Size(100, 22);
             this.txbNumVisteur.TabIndex = 27;
             // 
             // txtB_DateV
             // 
             this.txtB_DateV.AutoSize = true;
-            this.txtB_DateV.Location = new System.Drawing.Point(383, 476);
-            this.txtB_DateV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtB_DateV.Location = new System.Drawing.Point(287, 387);
             this.txtB_DateV.Name = "txtB_DateV";
-            this.txtB_DateV.Size = new System.Drawing.Size(150, 20);
+            this.txtB_DateV.Size = new System.Drawing.Size(121, 16);
             this.txtB_DateV.TabIndex = 25;
             this.txtB_DateV.Text = "Date d\'embauche :";
             // 
             // txtB_VilleV
             // 
             this.txtB_VilleV.AutoSize = true;
-            this.txtB_VilleV.Location = new System.Drawing.Point(383, 442);
-            this.txtB_VilleV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtB_VilleV.Location = new System.Drawing.Point(287, 359);
             this.txtB_VilleV.Name = "txtB_VilleV";
-            this.txtB_VilleV.Size = new System.Drawing.Size(56, 20);
+            this.txtB_VilleV.Size = new System.Drawing.Size(43, 16);
             this.txtB_VilleV.TabIndex = 24;
             this.txtB_VilleV.Text = "Ville : ";
             // 
             // txtB_CPV
             // 
             this.txtB_CPV.AutoSize = true;
-            this.txtB_CPV.Location = new System.Drawing.Point(383, 407);
-            this.txtB_CPV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtB_CPV.Location = new System.Drawing.Point(287, 331);
             this.txtB_CPV.Name = "txtB_CPV";
-            this.txtB_CPV.Size = new System.Drawing.Size(110, 20);
+            this.txtB_CPV.Size = new System.Drawing.Size(88, 16);
             this.txtB_CPV.TabIndex = 23;
             this.txtB_CPV.Text = "Code Postal :";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(15, 513);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(11, 417);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(81, 20);
+            this.label18.Size = new System.Drawing.Size(65, 16);
             this.label18.TabIndex = 22;
             this.label18.Text = "Adresse :";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(15, 476);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(11, 387);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(77, 20);
+            this.label19.Size = new System.Drawing.Size(61, 16);
             this.label19.TabIndex = 21;
             this.label19.Text = "Prénom :";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(15, 442);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(11, 359);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 20);
+            this.label20.Size = new System.Drawing.Size(43, 16);
             this.label20.TabIndex = 20;
             this.label20.Text = "Nom :";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(15, 407);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(11, 331);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(140, 20);
+            this.label21.Size = new System.Drawing.Size(109, 16);
             this.label21.TabIndex = 19;
             this.label21.Text = "Numéro Visiteur :";
             this.label21.Click += new System.EventHandler(this.label21_Click);
@@ -791,10 +737,9 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.dgvVisiteur.Location = new System.Drawing.Point(68, 7);
-            this.dgvVisiteur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvVisiteur.Location = new System.Drawing.Point(51, 6);
             this.dgvVisiteur.Name = "dgvVisiteur";
-            this.dgvVisiteur.Size = new System.Drawing.Size(867, 370);
+            this.dgvVisiteur.Size = new System.Drawing.Size(650, 301);
             this.dgvVisiteur.TabIndex = 1;
             this.dgvVisiteur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -830,17 +775,16 @@
             // 
             // FrmAppli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 634);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(793, 515);
+            this.Controls.Add(this.tabProduits);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmAppli";
             this.Text = "GSB Back-Office";
             this.Load += new System.EventHandler(this.FrmAppli_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabProduits.ResumeLayout(false);
             this.tabPageProduits.ResumeLayout(false);
             this.tabPageProduits.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).EndInit();
@@ -858,7 +802,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabProduits;
         private System.Windows.Forms.TabPage tabPageProduits;
         private System.Windows.Forms.TabPage tabPagePraticiens;
         private System.Windows.Forms.TabPage tabPageVisiteurs;

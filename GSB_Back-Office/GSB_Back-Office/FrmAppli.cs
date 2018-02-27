@@ -66,5 +66,8 @@ namespace GSB_Back_Office
                 dgvVisiteur.Rows.Add(v.NumVisiteur, v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche);
             }
         }
+        
+
+
     }
 }

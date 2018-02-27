@@ -19,6 +19,8 @@ namespace GSB_Back_Office
         String coefConfiance;
         String specialite;
 
+        public static List<Praticien> lesPraticien = new List<Praticien>();
+
         public void ajouterPraticien(String unCodePraticien, String uneRaisonSociale, String uneAdresse,
             String unTelephone, String unContact, String unCoefNotoriete, String unCoefConfiance,
             String uneSpecialite)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAjoutPraticien));
             this.txbSpécialitePraticienAjout = new System.Windows.Forms.TextBox();
             this.txbCoeffConfiancePraticienAjout = new System.Windows.Forms.TextBox();
             this.txbCoefNotorietePraticienAjout = new System.Windows.Forms.TextBox();
@@ -207,6 +208,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAjoutPraticien";
             this.Text = "FrmAjoutPraticien";
             this.ResumeLayout(false);

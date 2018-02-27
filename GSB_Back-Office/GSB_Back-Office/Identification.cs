@@ -11,7 +11,7 @@ namespace GSB_Back_Office
         DAOIdentification id = new DAOIdentification();
         public bool verifConnexion(String unLogin, String unPassword)
         {
-            return id.verifConnect(unLogin, unPassword);             
+            return id.verifConnect(unLogin, unPassword);
         }
     }
 }

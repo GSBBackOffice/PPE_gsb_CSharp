@@ -17,10 +17,11 @@ namespace GSB_Back_Office
         private string cpVisiteur;
         private string villeVisiteur;
         private string dateEmbauche;
+        private string secteurVisiteur;
 
        
 
-        public Visiteur(string numVisiteur, string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, string dateEmbauche)
+        public Visiteur(string numVisiteur, string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, string dateEmbauche, string secteurVisiteur)
         {
             this.numVisiteur = numVisiteur;
             this.nomVisiteur = nomVisiteur;
@@ -29,6 +30,7 @@ namespace GSB_Back_Office
             this.cpVisiteur = cpVisiteur;
             this.villeVisiteur = villeVisiteur;
             this.dateEmbauche = dateEmbauche;
+            this.secteurVisiteur = secteurVisiteur;
         }
         #region Accesseurs
      
@@ -122,11 +124,25 @@ namespace GSB_Back_Office
                 dateEmbauche = value;
             }
         }
+
+        public string SecteurVisiteur
+        {
+            get
+            {
+                return secteurVisiteur;
+            }
+
+            set
+            {
+                secteurVisiteur = value;
+            }
+        }
         #endregion
 
-        public void ajouterVisiteur(Visiteur unVisiteur)
+        public static void ajouterVisiteur(Visiteur unVisiteur)
         {
             lesVisiteurs.Add(unVisiteur);
+            db.creerVisiteur(unVisiteur);
             
 
         }

@@ -34,7 +34,6 @@
             this.txbVilleVisiteurAjout = new System.Windows.Forms.TextBox();
             this.txbCPVisiteurAjout = new System.Windows.Forms.TextBox();
             this.txbAdresseVisiteurAjout = new System.Windows.Forms.TextBox();
-            this.txbPrenomVisiteurAjout = new System.Windows.Forms.TextBox();
             this.txbNomVisiteurAjout = new System.Windows.Forms.TextBox();
             this.txbNumVisiteurAjout = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -44,11 +43,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.txbPrenomVisiteurAjout = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cbxAjoutSecteurVisiteur = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnAjoutVisiteur
             // 
-            this.btnAjoutVisiteur.Location = new System.Drawing.Point(426, 119);
+            this.btnAjoutVisiteur.Location = new System.Drawing.Point(460, 140);
             this.btnAjoutVisiteur.Name = "btnAjoutVisiteur";
             this.btnAjoutVisiteur.Size = new System.Drawing.Size(134, 31);
             this.btnAjoutVisiteur.TabIndex = 50;
@@ -79,17 +81,10 @@
             // 
             // txbAdresseVisiteurAjout
             // 
-            this.txbAdresseVisiteurAjout.Location = new System.Drawing.Point(143, 96);
+            this.txbAdresseVisiteurAjout.Location = new System.Drawing.Point(143, 98);
             this.txbAdresseVisiteurAjout.Name = "txbAdresseVisiteurAjout";
             this.txbAdresseVisiteurAjout.Size = new System.Drawing.Size(100, 20);
             this.txbAdresseVisiteurAjout.TabIndex = 45;
-            // 
-            // txbPrenomVisiteurAjout
-            // 
-            this.txbPrenomVisiteurAjout.Location = new System.Drawing.Point(143, 68);
-            this.txbPrenomVisiteurAjout.Name = "txbPrenomVisiteurAjout";
-            this.txbPrenomVisiteurAjout.Size = new System.Drawing.Size(100, 20);
-            this.txbPrenomVisiteurAjout.TabIndex = 44;
             // 
             // txbNomVisiteurAjout
             // 
@@ -168,17 +163,44 @@
             this.label6.TabIndex = 34;
             this.label6.Text = "Numéro Visiteur";
             // 
+            // txbPrenomVisiteurAjout
+            // 
+            this.txbPrenomVisiteurAjout.Location = new System.Drawing.Point(143, 68);
+            this.txbPrenomVisiteurAjout.Name = "txbPrenomVisiteurAjout";
+            this.txbPrenomVisiteurAjout.Size = new System.Drawing.Size(100, 20);
+            this.txbPrenomVisiteurAjout.TabIndex = 52;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(304, 98);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(44, 13);
+            this.label13.TabIndex = 51;
+            this.label13.Text = "Secteur";
+            this.label13.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // cbxAjoutSecteurVisiteur
+            // 
+            this.cbxAjoutSecteurVisiteur.FormattingEnabled = true;
+            this.cbxAjoutSecteurVisiteur.Location = new System.Drawing.Point(460, 95);
+            this.cbxAjoutSecteurVisiteur.Name = "cbxAjoutSecteurVisiteur";
+            this.cbxAjoutSecteurVisiteur.Size = new System.Drawing.Size(100, 21);
+            this.cbxAjoutSecteurVisiteur.TabIndex = 53;
+            // 
             // FrmAjoutVisiteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 163);
+            this.ClientSize = new System.Drawing.Size(607, 183);
+            this.Controls.Add(this.cbxAjoutSecteurVisiteur);
+            this.Controls.Add(this.txbPrenomVisiteurAjout);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnAjoutVisiteur);
             this.Controls.Add(this.txbDateEmbaucheVisiteurAjout);
             this.Controls.Add(this.txbVilleVisiteurAjout);
             this.Controls.Add(this.txbCPVisiteurAjout);
             this.Controls.Add(this.txbAdresseVisiteurAjout);
-            this.Controls.Add(this.txbPrenomVisiteurAjout);
             this.Controls.Add(this.txbNomVisiteurAjout);
             this.Controls.Add(this.txbNumVisiteurAjout);
             this.Controls.Add(this.label12);
@@ -203,7 +225,6 @@
         private System.Windows.Forms.TextBox txbVilleVisiteurAjout;
         private System.Windows.Forms.TextBox txbCPVisiteurAjout;
         private System.Windows.Forms.TextBox txbAdresseVisiteurAjout;
-        private System.Windows.Forms.TextBox txbPrenomVisiteurAjout;
         private System.Windows.Forms.TextBox txbNomVisiteurAjout;
         private System.Windows.Forms.TextBox txbNumVisiteurAjout;
         private System.Windows.Forms.Label label12;
@@ -213,5 +234,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txbPrenomVisiteurAjout;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cbxAjoutSecteurVisiteur;
     }
 }

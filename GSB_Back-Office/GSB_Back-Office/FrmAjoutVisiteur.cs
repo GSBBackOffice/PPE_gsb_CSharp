@@ -20,11 +20,19 @@ namespace GSB_Back_Office
         private void btnAjoutVisiteur_Click(object sender, EventArgs e)
         {
             Visiteur visiteur = new Visiteur(txbNumVisiteurAjout.Text, txbNomVisiteurAjout.Text, txbPrenomVisiteurAjout.Text,
-                txbAdresseVisiteurAjout.Text, txbCPVisiteurAjout.Text, txbVilleVisiteurAjout.Text, txbDateEmbaucheVisiteurAjout.Text);
-            Visiteur.lesVisiteurs.Add(visiteur);
-            
-            FrmAjoutVisiteur frmAjoutVis = new FrmAjoutVisiteur();
-            frmAjoutVis.Close();
+                txbAdresseVisiteurAjout.Text, txbCPVisiteurAjout.Text, txbVilleVisiteurAjout.Text, txbDateEmbaucheVisiteurAjout.Text, cbxAjoutSecteurVisiteur.Text);
+            Visiteur.ajouterVisiteur(visiteur);
+          
+             
+
+            // FrmAjoutVisiteur frmAjoutVis = new FrmAjoutVisiteur();
+            this.Close();
+            // frmAjoutVis.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

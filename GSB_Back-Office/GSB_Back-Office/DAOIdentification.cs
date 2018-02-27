@@ -18,14 +18,14 @@ namespace GSB_Back_Office
             int i = 0;
             try
             {
-                String req = "select * from gestionnaire where loginGestionnaire='" + id + "' and mdpGestionnaire='" + password + "'";
+                String req = "select * from Gestionnaire where loginGestionnaire='" + id + "' and mdpGestionnaire='" + password + "'";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
                 rs = db.execSQLread(req);
-                while (rs.NextResult())
+                while (rs.Read())
                 {
-                    i = i++;
+                    i++;
                 }
             }
             catch (Exception ex)

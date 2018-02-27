@@ -21,7 +21,7 @@ namespace GSB_Back_Office
         {
             try
             {
-                myConnexion = new SqlConnection("Data Source=’172.17.21.10’;Initial Catalog=SIO2_GSB_TeamD;User ID=SIO2-dev;Password=btssio-slam-2018");
+                myConnexion = new SqlConnection("Data Source='172.17.21.10';Initial Catalog=SIO2_GSB_TeamD;User ID=SIO2-dev;Password=btssio-slam-2018");
                 myConnexion.Open();
             }
             catch (Exception ex)

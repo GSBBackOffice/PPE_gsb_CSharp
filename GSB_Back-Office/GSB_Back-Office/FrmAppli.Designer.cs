@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAppli));
-            this.tabProduits = new System.Windows.Forms.TabControl();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageProduits = new System.Windows.Forms.TabPage();
             this.dgvContrindication = new System.Windows.Forms.DataGridView();
             this.colContrindication = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,7 +103,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabProduits.SuspendLayout();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabControl1.SuspendLayout();
             this.tabPageProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).BeginInit();
@@ -114,20 +115,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabProduits
+            // tabControl1
             // 
-            this.tabProduits.Controls.Add(this.tabPageProduits);
-            this.tabProduits.Controls.Add(this.tabPagePraticiens);
-            this.tabProduits.Controls.Add(this.tabPageVisiteurs);
-            this.tabProduits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabProduits.ItemSize = new System.Drawing.Size(60, 20);
-            this.tabProduits.Location = new System.Drawing.Point(12, 12);
-            this.tabProduits.Name = "tabProduits";
-            this.tabProduits.Padding = new System.Drawing.Point(20, 3);
-            this.tabProduits.SelectedIndex = 0;
-            this.tabProduits.Size = new System.Drawing.Size(765, 491);
-            this.tabProduits.TabIndex = 0;
-            this.tabProduits.Enter += new System.EventHandler(this.tabControl1_Enter);
+            this.tabControl1.Controls.Add(this.tabPageProduits);
+            this.tabControl1.Controls.Add(this.tabPagePraticiens);
+            this.tabControl1.Controls.Add(this.tabPageVisiteurs);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(60, 20);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(20, 3);
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(765, 491);
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPageProduits
             // 
@@ -736,10 +736,11 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.dgvVisiteur.Location = new System.Drawing.Point(51, 6);
+            this.dataGridViewTextBoxColumn6,
+            this.Column1});
+            this.dgvVisiteur.Location = new System.Drawing.Point(14, 6);
             this.dgvVisiteur.Name = "dgvVisiteur";
-            this.dgvVisiteur.Size = new System.Drawing.Size(650, 301);
+            this.dgvVisiteur.Size = new System.Drawing.Size(730, 316);
             this.dgvVisiteur.TabIndex = 1;
             this.dgvVisiteur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -773,18 +774,23 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Date d\'Embauche";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Secteur";
+            this.Column1.Name = "Column1";
+            // 
             // FrmAppli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 515);
-            this.Controls.Add(this.tabProduits);
+            this.Controls.Add(this.tabControl1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAppli";
             this.Text = "GSB Back-Office";
             this.Load += new System.EventHandler(this.FrmAppli_Load);
-            this.tabProduits.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             this.tabPageProduits.ResumeLayout(false);
             this.tabPageProduits.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).EndInit();
@@ -802,7 +808,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabProduits;
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageProduits;
         private System.Windows.Forms.TabPage tabPagePraticiens;
         private System.Windows.Forms.TabPage tabPageVisiteurs;
@@ -875,5 +881,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

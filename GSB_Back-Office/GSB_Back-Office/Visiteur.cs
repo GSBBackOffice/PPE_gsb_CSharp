@@ -9,6 +9,7 @@ namespace GSB_Back_Office
     class Visiteur
     {
         private static DAOVisiteur db = new DAOVisiteur();
+
         public static List<Visiteur> lesVisiteurs = new List<Visiteur>();
         private string numVisiteur;
         private string nomVisiteur;

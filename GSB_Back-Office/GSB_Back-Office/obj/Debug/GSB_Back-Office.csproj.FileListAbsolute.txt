@@ -43,3 +43,15 @@ E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmA
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmIdentification.resources
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csprojResolveAssemblyReference.cache
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutPraticien.resources
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutVisiteur.resources
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAppli.resources
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmIdentification.resources
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
+Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb

@@ -19,7 +19,7 @@ namespace GSB_Back_Office
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            Identification id = new Identification();
+            /*Identification id = new Identification();
             if (id.verifConnexion(txbIdentifiant.Text,txbPassword.Text))
             {
                 FrmAppli frmappli = new FrmAppli();
@@ -29,7 +29,9 @@ namespace GSB_Back_Office
             else
             {
                 lblIdentification.Text = "Identifiant ou Mot de passe incorrecte";
-            }
+            }*/
+            FrmAppli frmappli = new FrmAppli();
+            frmappli.Show();
         }
 
         private void FrmIdentification_Load(object sender, EventArgs e)

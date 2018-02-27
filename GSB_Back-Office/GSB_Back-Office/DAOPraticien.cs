@@ -10,14 +10,7 @@ namespace GSB_Back_Office
 {
     class DAOPraticien
     {
-        String codePraticien;
-        String raisonSociale;
-        String adresse;
-        String telephone;
-        String contact;
-        String coefNotoriete;
-        String coefConfiance;
-        String specialite;
+       
 
         public DAOPraticien()
         {

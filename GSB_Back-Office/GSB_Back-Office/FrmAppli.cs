@@ -16,7 +16,11 @@ namespace GSB_Back_Office
         {
             InitializeComponent();
         }
-
+        private void FrmAppli_Load(object sender, EventArgs e)
+        {
+            DAOProduit.initProduits();
+        }
+        #region practiciens
         private void tabPagePraticiens_Click(object sender, EventArgs e)
         {
 
@@ -54,10 +58,7 @@ namespace GSB_Back_Office
 
         }
 
-        private void FrmAppli_Load(object sender, EventArgs e)
-        {
-
-        }
+        
         private void initVisiteur(object sender, EventArgs e)
         {
             
@@ -65,6 +66,24 @@ namespace GSB_Back_Office
             {
                 dgvVisiteur.Rows.Add(v.NumVisiteur, v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche);
             }
+        }
+        #endregion
+
+        private void tabPageProduits_Enter(object sender, EventArgs e)
+        {
+            
+
+        }
+        private void initCbxProduit()
+        {
+            foreach(Produit p in Produit.lesProduits)
+            {
+                cbxProduit.Items.Add(p.NomProduit);
+            }
+        }
+        private void tabPageProduits_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

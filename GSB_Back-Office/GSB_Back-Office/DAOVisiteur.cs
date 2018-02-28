@@ -44,7 +44,7 @@ namespace GSB_Back_Office
         {
             try
             {
-                String req = "UPDATE Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche" +/*,numSecteur*/") SET nomVisiteur = '" + visiteur.NomVisiteur + "', prenomVisiteur = '" + visiteur.PrenomVisiteur
+                String req = "UPDATE Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche,numSecteur) SET nomVisiteur = '" + visiteur.NomVisiteur + "', prenomVisiteur = '" + visiteur.PrenomVisiteur
                     + "', adresse = '" + visiteur.Adresse + "', cpVisiteur = '" + visiteur.CpVisiteur + "', villeVisiteur = '" + visiteur.VilleVisiteur + "', dateEmbauche = '" + visiteur.DateEmbauche +"', descriptionSecteur = '" + visiteur.SecteurVisiteur + "'";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();

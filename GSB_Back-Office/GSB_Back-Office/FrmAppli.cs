@@ -56,6 +56,7 @@ namespace GSB_Back_Office
 
         private void FrmAppli_Load(object sender, EventArgs e)
         {
+            
 
         }
         private void initVisiteur(object sender, EventArgs e)

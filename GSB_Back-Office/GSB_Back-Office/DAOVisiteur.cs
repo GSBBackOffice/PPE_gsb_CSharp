@@ -18,6 +18,7 @@ namespace GSB_Back_Office
         private string villeVisiteur;
         private string dateEmbauche;
         private string descriptionSecteur;
+        
 
         public DAOVisiteur()
         {
@@ -56,6 +57,30 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
-
+        
+        public static void  allVisiteur()
+        {
+             
+            try
+            {
+                String req = "Select * From Visiteur WHERE supprimer=0";
+                SqlDataReader rs;
+                DAOFactory db = new DAOFactory();
+                db.connect();
+                rs = db.execSQLread(req);
+                Visiteur v = null;
+                while (rs.Read())
+                {
+                    v = new Visiteur(rs.GetValue(0), rs.GetValue(1), rs.GetValue(2), rs.GetValue(3), rs.GetValue(4), rs.GetValue(5), rs.GetValue(6), rs.GetValue(7));
+                }
+                Visiteur.lesVisiteurs.Add(v);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERREUR : " + ex);
+            }
+            
+        }
+        
     }
 }

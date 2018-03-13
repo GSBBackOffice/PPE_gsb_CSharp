@@ -151,7 +151,7 @@
             this.tabPageProduits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageProduits.Location = new System.Drawing.Point(4, 24);
             this.tabPageProduits.Name = "tabPageProduits";
-            this.tabPageProduits.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageProduits.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageProduits.Size = new System.Drawing.Size(757, 463);
             this.tabPageProduits.TabIndex = 0;
             this.tabPageProduits.Text = "Produits";
@@ -357,7 +357,7 @@
             this.tabPagePraticiens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPagePraticiens.Location = new System.Drawing.Point(4, 24);
             this.tabPagePraticiens.Name = "tabPagePraticiens";
-            this.tabPagePraticiens.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPagePraticiens.Padding = new System.Windows.Forms.Padding(3);
             this.tabPagePraticiens.Size = new System.Drawing.Size(757, 463);
             this.tabPagePraticiens.TabIndex = 1;
             this.tabPagePraticiens.Text = "Praticiens";
@@ -585,7 +585,7 @@
             this.tabPageVisiteurs.Controls.Add(this.dgvVisiteur);
             this.tabPageVisiteurs.Location = new System.Drawing.Point(4, 24);
             this.tabPageVisiteurs.Name = "tabPageVisiteurs";
-            this.tabPageVisiteurs.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageVisiteurs.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageVisiteurs.Size = new System.Drawing.Size(757, 463);
             this.tabPageVisiteurs.TabIndex = 2;
             this.tabPageVisiteurs.Text = "Visiteurs";

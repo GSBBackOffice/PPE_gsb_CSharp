@@ -21,3 +21,6 @@ C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
+D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
+D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
+D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb

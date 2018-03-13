@@ -16,5 +16,59 @@ namespace GSB_Back_Office
         {
             InitializeComponent();
         }
+
+        private void tabPagePraticiens_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAjouterPraticien_Click(object sender, EventArgs e)
+        {
+            FrmAjoutPraticien frmAjoutPRaticien = new FrmAjoutPraticien();
+            frmAjoutPRaticien.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddV_Click(object sender, EventArgs e)
+        {
+            FrmAjoutVisiteur frmAjoutVisiteur = new FrmAjoutVisiteur();
+            frmAjoutVisiteur.Show();
+        }
+
+        private void tabPageVisiteurs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ModifV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmAppli_Load(object sender, EventArgs e)
+        {
+            
+
+        }
+        private void initVisiteur(object sender, EventArgs e)
+        {
+            
+                foreach(Visiteur v in Visiteur.lesVisiteurs)
+            {
+                dgvVisiteur.Rows.Add( v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche , v.SecteurVisiteur);
+            }
+        }
+        
+
+
     }
 }

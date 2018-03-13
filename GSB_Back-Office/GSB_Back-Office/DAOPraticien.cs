@@ -23,9 +23,7 @@ namespace GSB_Back_Office
         {
 
         }
-        public void ajouterPraticien(String codePraticien,String raisonSociale, String adresse, 
-            String telephone, String contact, String coefNotoriete, String coefConfiance, 
-            String specialite)
+        public void creerPraticien(Praticien unPraticien)
         {
             try
             {
@@ -33,7 +31,7 @@ namespace GSB_Back_Office
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
-                db.execSQLwrite(req);
+                rs = db.execSQLread(req);
             }
             catch (Exception ex)
             {
@@ -47,14 +45,15 @@ namespace GSB_Back_Office
             DAOFactory db = new DAOFactory();
             db.connect();
             rs = db.execSQLread(req);
+<<<<<<< HEAD
       /*      foreach (){
 
             } */
+=======
+            
+>>>>>>> CHARLES
         }
-
-
-
-
+        
 
     }
 }

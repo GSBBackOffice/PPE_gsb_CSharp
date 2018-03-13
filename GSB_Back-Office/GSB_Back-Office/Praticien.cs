@@ -8,7 +8,7 @@ namespace GSB_Back_Office
 {
     class Praticien
     {
-        DAOPraticien praticien = new DAOPraticien();
+        private static DAOPraticien db = new DAOPraticien();
 
         String codePraticien;
         String raisonSociale;
@@ -19,22 +19,28 @@ namespace GSB_Back_Office
         String coefConfiance;
         String specialite;
 
-        public static List<Praticien> lesPraticien = new List<Praticien>();
-
-        public void ajouterPraticien(String unCodePraticien, String uneRaisonSociale, String uneAdresse,
+        public Praticien(String unCodePraticien, String uneRaisonSociale, String uneAdresse,
             String unTelephone, String unContact, String unCoefNotoriete, String unCoefConfiance,
             String uneSpecialite)
         {
-            codePraticien = unCodePraticien;
-            raisonSociale = uneRaisonSociale;
-            adresse = uneAdresse;
-            telephone = unTelephone;
-            contact = unContact;
-            coefNotoriete = unCoefNotoriete;
-            coefConfiance = unCoefConfiance;
-            specialite = uneSpecialite;
+            this.codePraticien = unCodePraticien;
+            this.raisonSociale = uneRaisonSociale;
+            this.adresse = uneAdresse;
+            this.telephone = unTelephone;
+            this.contact = unContact;
+            this.coefNotoriete = unCoefNotoriete;
+            this.coefConfiance = unCoefConfiance;
+            this.specialite = uneSpecialite;
 
-            praticien.ajouterPraticien(codePraticien, raisonSociale, adresse, telephone, contact, coefNotoriete, coefConfiance, specialite);
+        }
+
+        public static List<Praticien> lesPraticiens = new List<Praticien>();
+
+        public static void ajouterPraticien(Praticien unPraticien)
+        {
+            lesPraticiens.Add(unPraticien);
+            db.creerPraticien(unPraticien);
+                        
         }
 
     }

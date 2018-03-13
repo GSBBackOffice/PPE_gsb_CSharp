@@ -46,6 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAOFactory.cs" />
+    <Compile Include="DAOIdentification.cs" />
+    <Compile Include="DAOPraticien.cs" />
+    <Compile Include="DAOVisiteur.cs" />
+    <Compile Include="FrmAjoutPraticien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutPraticien.Designer.cs">
+      <DependentUpon>FrmAjoutPraticien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjoutVisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutVisiteur.Designer.cs">
+      <DependentUpon>FrmAjoutVisiteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIdentification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +74,17 @@
     <Compile Include="FrmAppli.Designer.cs">
       <DependentUpon>FrmAppli.cs</DependentUpon>
     </Compile>
+    <Compile Include="Identification.cs" />
+    <Compile Include="Praticien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visiteur.cs" />
+    <EmbeddedResource Include="FrmAjoutPraticien.resx">
+      <DependentUpon>FrmAjoutPraticien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjoutVisiteur.resx">
+      <DependentUpon>FrmAjoutVisiteur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAppli.resx">
       <DependentUpon>FrmAppli.cs</DependentUpon>
     </EmbeddedResource>

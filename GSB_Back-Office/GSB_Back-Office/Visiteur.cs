@@ -18,7 +18,6 @@ namespace GSB_Back_Office
         private DateTime dateEmbauche;
         private string secteurVisiteur;
 
-       
 
         public Visiteur(string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, DateTime dateEmbauche, string secteurVisiteur)
         {

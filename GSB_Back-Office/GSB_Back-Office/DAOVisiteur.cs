@@ -18,6 +18,7 @@ namespace GSB_Back_Office
         private string villeVisiteur;
         private string dateEmbauche;
         private string descriptionSecteur;
+        
 
         public DAOVisiteur()
         {
@@ -44,7 +45,7 @@ namespace GSB_Back_Office
         {
             try
             {
-                String req = "UPDATE Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche" +/*,numSecteur*/") SET nomVisiteur = '" + visiteur.NomVisiteur + "', prenomVisiteur = '" + visiteur.PrenomVisiteur
+                String req = "UPDATE Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche,numSecteur) SET nomVisiteur = '" + visiteur.NomVisiteur + "', prenomVisiteur = '" + visiteur.PrenomVisiteur
                     + "', adresse = '" + visiteur.Adresse + "', cpVisiteur = '" + visiteur.CpVisiteur + "', villeVisiteur = '" + visiteur.VilleVisiteur + "', dateEmbauche = '" + visiteur.DateEmbauche +"', descriptionSecteur = '" + visiteur.SecteurVisiteur + "'";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
@@ -56,6 +57,30 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
-
+        
+        public static void  allVisiteur()
+        {
+             
+            try
+            {
+                String req = "Select * From Visiteur WHERE supprimer=0";
+                SqlDataReader rs;
+                DAOFactory db = new DAOFactory();
+                db.connect();
+                rs = db.execSQLread(req);
+                Visiteur v = null;
+                while (rs.Read())
+                {
+                    v = new Visiteur(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetDateTime(5), rs.GetString(6));
+                }
+                Visiteur.lesVisiteurs.Add(v);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERREUR : " + ex);
+            }
+            
+        }
+        
     }
 }

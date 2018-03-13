@@ -43,13 +43,12 @@
             this.txbPrenomVisiteurAjout = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cbxAjoutSecteurVisiteur = new System.Windows.Forms.ComboBox();
-            this.txbDateEmbaucheVisiteurAjout = new System.Windows.Forms.TextBox();
             this.dtpEmbauche = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnAjoutVisiteur
             // 
-            this.btnAjoutVisiteur.Location = new System.Drawing.Point(397, 122);
+            this.btnAjoutVisiteur.Location = new System.Drawing.Point(452, 122);
             this.btnAjoutVisiteur.Name = "btnAjoutVisiteur";
             this.btnAjoutVisiteur.Size = new System.Drawing.Size(134, 31);
             this.btnAjoutVisiteur.TabIndex = 50;
@@ -61,9 +60,8 @@
             // 
             this.txbVilleVisiteurAjout.Location = new System.Drawing.Point(431, 16);
             this.txbVilleVisiteurAjout.Name = "txbVilleVisiteurAjout";
-            this.txbVilleVisiteurAjout.Size = new System.Drawing.Size(100, 20);
+            this.txbVilleVisiteurAjout.Size = new System.Drawing.Size(124, 20);
             this.txbVilleVisiteurAjout.TabIndex = 47;
-            this.txbVilleVisiteurAjout.TextChanged += new System.EventHandler(this.txbVilleVisiteurAjout_TextChanged);
             // 
             // txbCPVisiteurAjout
             // 
@@ -162,36 +160,27 @@
             this.cbxAjoutSecteurVisiteur.FormattingEnabled = true;
             this.cbxAjoutSecteurVisiteur.Location = new System.Drawing.Point(431, 73);
             this.cbxAjoutSecteurVisiteur.Name = "cbxAjoutSecteurVisiteur";
-            this.cbxAjoutSecteurVisiteur.Size = new System.Drawing.Size(100, 21);
+            this.cbxAjoutSecteurVisiteur.Size = new System.Drawing.Size(124, 21);
             this.cbxAjoutSecteurVisiteur.TabIndex = 53;
-            // 
-            // txbDateEmbaucheVisiteurAjout
-            // 
-            this.txbDateEmbaucheVisiteurAjout.Location = new System.Drawing.Point(431, 44);
-            this.txbDateEmbaucheVisiteurAjout.Name = "txbDateEmbaucheVisiteurAjout";
-            this.txbDateEmbaucheVisiteurAjout.Size = new System.Drawing.Size(100, 20);
-            this.txbDateEmbaucheVisiteurAjout.TabIndex = 48;
-            this.txbDateEmbaucheVisiteurAjout.TextChanged += new System.EventHandler(this.txbDateEmbaucheVisiteurAjout_TextChanged);
             // 
             // dtpEmbauche
             // 
-            this.dtpEmbauche.Location = new System.Drawing.Point(176, 129);
+            this.dtpEmbauche.Location = new System.Drawing.Point(431, 47);
             this.dtpEmbauche.Name = "dtpEmbauche";
-            this.dtpEmbauche.Size = new System.Drawing.Size(218, 20);
+            this.dtpEmbauche.Size = new System.Drawing.Size(124, 20);
             this.dtpEmbauche.TabIndex = 54;
-            this.dtpEmbauche.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtpEmbauche.ValueChanged += new System.EventHandler(this.dtpEmbauche_ValueChanged);
             // 
             // FrmAjoutVisiteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 169);
+            this.ClientSize = new System.Drawing.Size(616, 176);
             this.Controls.Add(this.dtpEmbauche);
             this.Controls.Add(this.cbxAjoutSecteurVisiteur);
             this.Controls.Add(this.txbPrenomVisiteurAjout);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnAjoutVisiteur);
-            this.Controls.Add(this.txbDateEmbaucheVisiteurAjout);
             this.Controls.Add(this.txbVilleVisiteurAjout);
             this.Controls.Add(this.txbCPVisiteurAjout);
             this.Controls.Add(this.txbAdresseVisiteurAjout);
@@ -226,7 +215,6 @@
         private System.Windows.Forms.TextBox txbPrenomVisiteurAjout;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbxAjoutSecteurVisiteur;
-        private System.Windows.Forms.TextBox txbDateEmbaucheVisiteurAjout;
         private System.Windows.Forms.DateTimePicker dtpEmbauche;
     }
 }

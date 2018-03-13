@@ -56,7 +56,10 @@ namespace GSB_Back_Office
 
         private void FrmAppli_Load(object sender, EventArgs e)
         {
-            
+            Visiteur.lesVisiteurs = DAOVisiteur.allVisiteur();
+            dgvVisiteur.DataSource = null;
+            dgvVisiteur.DataSource = Visiteur.lesVisiteurs;
+
 
         }
         private void initVisiteur(object sender, EventArgs e)

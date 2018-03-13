@@ -23,11 +23,6 @@ E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
 E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
 =======
-<<<<<<< HEAD
-E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
-E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
-E:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
-=======
 C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutPraticien.resources
 F:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
 F:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe

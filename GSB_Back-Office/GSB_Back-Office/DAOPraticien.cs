@@ -38,7 +38,7 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
-        public void affichPraticien()
+        public void affichePraticien()
         {
             String req = "SELECT * FROM Praticien";
             SqlDataReader rs;

@@ -24,6 +24,9 @@ namespace GSB_Back_Office
                 txbCoefNotorietePraticienAjout.Text, txbCoeffConfiancePraticienAjout.Text,
                 txbSpécialitePraticienAjout.Text);
             Praticien.ajouterPraticien(praticien);
+
+            lblAjoutPraticien.Text = "Ajout Terminé";
         }
+
     }
 }

@@ -45,13 +45,11 @@ namespace GSB_Back_Office
             DAOFactory db = new DAOFactory();
             db.connect();
             rs = db.execSQLread(req);
-<<<<<<< HEAD
+
       /*      foreach (){
 
             } */
-=======
-            
->>>>>>> CHARLES
+
         }
         
 

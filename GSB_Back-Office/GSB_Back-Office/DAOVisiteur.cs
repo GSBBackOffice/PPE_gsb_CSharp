@@ -71,7 +71,7 @@ namespace GSB_Back_Office
                 Visiteur v = null;
                 while (rs.Read())
                 {
-                    v = new Visiteur(rs.GetValue(0), rs.GetValue(1), rs.GetValue(2), rs.GetValue(3), rs.GetValue(4), rs.GetValue(5), rs.GetValue(6), rs.GetValue(7));
+                    v = new Visiteur(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetDateTime(5), rs.GetString(6));
                 }
                 Visiteur.lesVisiteurs.Add(v);
             }

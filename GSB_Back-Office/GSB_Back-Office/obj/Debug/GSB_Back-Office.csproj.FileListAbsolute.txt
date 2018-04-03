@@ -70,3 +70,4 @@ D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.cspr
 >>>>>>> master
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb
+C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutVisiteur.resources

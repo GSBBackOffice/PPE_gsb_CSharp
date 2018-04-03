@@ -9,8 +9,6 @@ namespace GSB_Back_Office
     class Praticien
     {
         private static DAOPraticien db = new DAOPraticien();
-
-        String codePraticien;
         String raisonSociale;
         String adresse;
         String telephone;
@@ -19,11 +17,10 @@ namespace GSB_Back_Office
         String coefConfiance;
         String specialite;
 
-        public Praticien(String unCodePraticien, String uneRaisonSociale, String uneAdresse,
+        public Praticien(String uneRaisonSociale, String uneAdresse,
             String unTelephone, String unContact, String unCoefNotoriete, String unCoefConfiance,
             String uneSpecialite)
         {
-            this.codePraticien = unCodePraticien;
             this.raisonSociale = uneRaisonSociale;
             this.adresse = uneAdresse;
             this.telephone = unTelephone;

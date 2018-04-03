@@ -27,7 +27,7 @@ namespace GSB_Back_Office
         {
             try
             {
-                String req = "INSERT INTO Praticien Values ('"+raisonSociale+"', '"+adresse+"','"+telephone+"','"+contact+"','"+coefNotoriete+"','"+coefConfiance+"')";
+                String req = "INSERT INTO Practicien(raisonSocialePraticien,adressePraticien,telephonePraticien,contactPraticien,coefficientNotoriete,coefficientConfiance,numSpecialite) Values ('" + unPraticien.RaisonSociale +"', '"+unPraticien.Adresse+"','"+unPraticien.Telephone+"','"+unPraticien.Contact+"','"+unPraticien.CoefNotoriete+"','"+unPraticien.CoefConfiance+"','"+unPraticien.Specialite+"')";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();

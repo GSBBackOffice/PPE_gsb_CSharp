@@ -9,8 +9,6 @@ namespace GSB_Back_Office
     class Praticien
     {
         private static DAOPraticien db = new DAOPraticien();
-
-        String codePraticien;
         String raisonSociale;
         String adresse;
         String telephone;
@@ -19,22 +17,114 @@ namespace GSB_Back_Office
         String coefConfiance;
         String specialite;
 
-        public Praticien(String unCodePraticien, String uneRaisonSociale, String uneAdresse,
+        public Praticien(String uneRaisonSociale, String uneAdresse,
             String unTelephone, String unContact, String unCoefNotoriete, String unCoefConfiance,
             String uneSpecialite)
         {
-            this.codePraticien = unCodePraticien;
-            this.raisonSociale = uneRaisonSociale;
-            this.adresse = uneAdresse;
-            this.telephone = unTelephone;
-            this.contact = unContact;
-            this.coefNotoriete = unCoefNotoriete;
-            this.coefConfiance = unCoefConfiance;
-            this.specialite = uneSpecialite;
+            this.RaisonSociale = uneRaisonSociale;
+            this.Adresse = uneAdresse;
+            this.Telephone = unTelephone;
+            this.Contact = unContact;
+            this.CoefNotoriete = unCoefNotoriete;
+            this.CoefConfiance = unCoefConfiance;
+            this.Specialite = uneSpecialite;
 
         }
 
+        
+
         public static List<Praticien> lesPraticiens = new List<Praticien>();
+
+        public string RaisonSociale
+        {
+            get
+            {
+                return raisonSociale;
+            }
+
+            set
+            {
+                raisonSociale = value;
+            }
+        }
+
+        public string Adresse
+        {
+            get
+            {
+                return adresse;
+            }
+
+            set
+            {
+                adresse = value;
+            }
+        }
+
+        public string Telephone
+        {
+            get
+            {
+                return telephone;
+            }
+
+            set
+            {
+                telephone = value;
+            }
+        }
+
+        public string Contact
+        {
+            get
+            {
+                return contact;
+            }
+
+            set
+            {
+                contact = value;
+            }
+        }
+
+        public string CoefNotoriete
+        {
+            get
+            {
+                return coefNotoriete;
+            }
+
+            set
+            {
+                coefNotoriete = value;
+            }
+        }
+
+        public string CoefConfiance
+        {
+            get
+            {
+                return coefConfiance;
+            }
+
+            set
+            {
+                coefConfiance = value;
+            }
+        }
+
+        public string Specialite
+        {
+            get
+            {
+                return specialite;
+            }
+
+            set
+            {
+                specialite = value;
+            }
+        }
 
         public static void ajouterPraticien(Praticien unPraticien)
         {

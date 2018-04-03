@@ -19,7 +19,7 @@ namespace GSB_Back_Office
 
         private void btnAjoutPraticien_Click(object sender, EventArgs e)
         {
-            Praticien praticien = new Praticien(txbCodePraticienAjout.Text, txbRaisonSocPraticienAjout.Text,
+            Praticien praticien = new Praticien(txbRaisonSocPraticienAjout.Text,
                 txbAdressePraticienAjout.Text, txbTelPraticienAjout.Text, txbContactPraticienAjout.Text,
                 txbCoefNotorietePraticienAjout.Text, txbCoeffConfiancePraticienAjout.Text,
                 txbSpécialitePraticienAjout.Text);

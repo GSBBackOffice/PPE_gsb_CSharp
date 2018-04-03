@@ -38,6 +38,8 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
+        public List<Praticien> toutLesPraticiens = new List<Praticien>();
+
         public void affichePraticien()
         {
             String req = "SELECT * FROM Praticien";
@@ -49,6 +51,7 @@ namespace GSB_Back_Office
             while (rs.Read())
             {
                 p = new Praticien(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetString(5), rs.GetString(6));
+                toutLesPraticiens.Add(p);
             }
 
         }

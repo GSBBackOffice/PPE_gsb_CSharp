@@ -31,6 +31,10 @@ namespace GSB_Back_Office
             myConnexion.Close();
         }
 
+        /// <summary>
+        /// Ecriture dans la base de données
+        /// </summary>
+        /// <param name="req"></param>
         public void execSQLwrite(String req)
         {
             try
@@ -47,6 +51,12 @@ namespace GSB_Back_Office
                 MessageBox.Show("Error : " + ex);
             }
         }
+
+        /// <summary>
+        /// Lecture de la base de données
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
         public SqlDataReader execSQLread(String req)
         {
             try

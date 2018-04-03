@@ -22,7 +22,7 @@ namespace GSB_Back_Office
         {
 
             Visiteur visiteur = new Visiteur(txbNomVisiteurAjout.Text, txbPrenomVisiteurAjout.Text,
-                txbAdresseVisiteurAjout.Text, txbCPVisiteurAjout.Text, txbVilleVisiteurAjout.Text, DateTime.Parse(dtpEmbauche.Text), cbxAjoutSecteurVisiteur.Text);
+                txbAdresseVisiteurAjout.Text, txbCPVisiteurAjout.Text, txbVilleVisiteurAjout.Text, dtpEmbauche.Text, cbxAjoutSecteurVisiteur.Text);
             Visiteur.ajouterVisiteur(visiteur);
           
              

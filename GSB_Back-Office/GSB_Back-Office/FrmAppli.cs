@@ -68,6 +68,10 @@ namespace GSB_Back_Office
             }
         }
         
+        private void initPraticien(object sendeer, EventArgs e)
+        {
+
+        }
 
 
     }

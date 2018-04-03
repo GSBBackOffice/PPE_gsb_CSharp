@@ -22,7 +22,7 @@ namespace GSB_Back_Office
             try
             {
                 String req = "INSERT INTO Visiteur (nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche,numSecteur)  Values ('" + visiteur.NomVisiteur + "', '" + visiteur.PrenomVisiteur 
-                    + "','" + visiteur.Adresse + "','" + visiteur.CpVisiteur + "','" + visiteur.VilleVisiteur + "','" + visiteur.DateEmbauche + "', '" + visiteur.SecteurVisiteur + "')";
+                    + "','" + visiteur.Adresse + "','" + visiteur.CpVisiteur + "','" + visiteur.VilleVisiteur + "','" + Convert.ToDateTime(visiteur.DateEmbauche) + "', '" + visiteur.SecteurVisiteur + "')";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
@@ -49,10 +49,10 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
-        
+        public static List<Visiteur> lesVisiteurs2 = new List<Visiteur>();
         public static List<Visiteur> allVisiteur()
         {
-            List<Visiteur> lesVisiteurs2 = new List<Visiteur>();
+           
             try
             {
                 String req = "Select nomVisiteur,prenomVisiteur,adresse,cpVisiteur,villeVisiteur,dateEmbauche,numSecteur From Visiteur";
@@ -63,9 +63,10 @@ namespace GSB_Back_Office
                 Visiteur v = null;
                 while (rs.Read())
                 {
-                    v = new Visiteur(rs[1].ToString(), rs[2].ToString(), rs[3].ToString(), rs[4].ToString(), rs[5].ToString(), DateTime.Parse(rs[6].ToString()), rs[7].ToString());
+                    v = new Visiteur(rs[0].ToString(), rs[1].ToString(), rs[2].ToString(), rs[3].ToString(), rs[4].ToString(), rs[5].ToString(), rs[6].ToString());
+                    lesVisiteurs2.Add(v);
                 }
-                lesVisiteurs2.Add(v);
+                
             }
             catch (Exception ex)
             {

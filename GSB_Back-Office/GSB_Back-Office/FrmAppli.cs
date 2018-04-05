@@ -82,6 +82,7 @@ namespace GSB_Back_Office
         {
 
         }
+<<<<<<< HEAD
         /* private void initVisiteur(object sender, EventArgs e)
 {
 
@@ -91,6 +92,13 @@ namespace GSB_Back_Office
     }
 }*/
 
+=======
+        
+        private void initPraticien(object sendeer, EventArgs e)
+        {
+
+        }
+>>>>>>> CHARLES
 
 
     }

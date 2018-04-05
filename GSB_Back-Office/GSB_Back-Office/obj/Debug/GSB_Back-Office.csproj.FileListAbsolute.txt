@@ -70,10 +70,14 @@ D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.cspr
 >>>>>>> master
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb
+<<<<<<< HEAD
 C:\Users\EMIEUX\Source\Repos\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutVisiteur.resources
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
+=======
+C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe.config
+>>>>>>> CHARLES
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csprojResolveAssemblyReference.cache
@@ -83,3 +87,8 @@ C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmIdentification.resources
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+=======
+C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
+C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
+>>>>>>> CHARLES

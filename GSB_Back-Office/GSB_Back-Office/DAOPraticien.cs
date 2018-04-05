@@ -27,7 +27,11 @@ namespace GSB_Back_Office
         {
             try
             {
+<<<<<<< HEAD
                 String req = "INSERT INTO Practicien(raisonSocialePraticien,adressePraticien,telephonePraticien,contactPraticien,coefficientNotoriete,coefficientConfiance,numSpecialite) Values ('" + unPraticien.RaisonSociale +"', '"+unPraticien.Adresse+"','"+unPraticien.Telephone+"','"+unPraticien.Contact+"','"+unPraticien.CoefNotoriete+"','"+unPraticien.CoefConfiance+"','"+unPraticien.Specialite+"')";
+=======
+                String req = "INSERT INTO Practicien (raisonSocialePraticien, adressePraticien, telephonePraticien, contactPraticien, coefficientNotoriete, coefficientConfiance, numSpecialite) Values ('" + unPraticien.RaisonSociale + "', '" + unPraticien.Adresse + "','" + unPraticien.Telephone + "','" + unPraticien.Contact + "','" + unPraticien.CoefNotoriete + "','" + unPraticien.CoefConfiance + "','"+ unPraticien.Specialite + "')";
+>>>>>>> CHARLES
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
@@ -38,17 +42,21 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
-        public void affichPraticien()
+        public List<Praticien> toutLesPraticiens = new List<Praticien>();
+
+        public void affichePraticien()
         {
             String req = "SELECT * FROM Praticien";
             SqlDataReader rs;
             DAOFactory db = new DAOFactory();
             db.connect();
             rs = db.execSQLread(req);
-
-      /*      foreach (){
-
-            } */
+            Praticien p = null;
+            while (rs.Read())
+            {
+                p = new Praticien(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetString(5), rs.GetString(6));
+                toutLesPraticiens.Add(p);
+            }
 
         }
         

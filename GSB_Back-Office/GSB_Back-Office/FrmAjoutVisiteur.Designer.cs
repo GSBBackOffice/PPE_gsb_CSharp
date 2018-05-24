@@ -158,6 +158,10 @@
             // cbxAjoutSecteurVisiteur
             // 
             this.cbxAjoutSecteurVisiteur.FormattingEnabled = true;
+            this.cbxAjoutSecteurVisiteur.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
             this.cbxAjoutSecteurVisiteur.Location = new System.Drawing.Point(431, 73);
             this.cbxAjoutSecteurVisiteur.Name = "cbxAjoutSecteurVisiteur";
             this.cbxAjoutSecteurVisiteur.Size = new System.Drawing.Size(124, 21);
@@ -194,6 +198,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAjoutVisiteur";
             this.Text = "FrmAjoutVisiteur";
+            this.Load += new System.EventHandler(this.FrmAjoutVisiteur_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

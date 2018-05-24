@@ -71,8 +71,7 @@ namespace GSB_Back_Office
             #region Visiteur
             DAOVisiteur.lesVisiteurs2 = DAOVisiteur.allVisiteur();
             dgvVisiteur.DataSource = null;
-            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;
-            
+            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;            
             #endregion
 
 
@@ -82,16 +81,6 @@ namespace GSB_Back_Office
         {
 
         }
-        /* private void initVisiteur(object sender, EventArgs e)
-{
-
-        foreach(Visiteur v in Visiteur.lesVisiteurs)
-    {
-        dgvVisiteur.Rows.Add( v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche , v.SecteurVisiteur);
-    }
-}*/
-
-
 
     }
 }

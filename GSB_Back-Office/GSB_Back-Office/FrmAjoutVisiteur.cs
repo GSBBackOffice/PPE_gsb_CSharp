@@ -12,7 +12,6 @@ namespace GSB_Back_Office
 {
     public partial class FrmAjoutVisiteur : Form
     {
-        private bool condi;
         public FrmAjoutVisiteur()
         {
             InitializeComponent();
@@ -40,6 +39,15 @@ namespace GSB_Back_Office
         private void dtpEmbauche_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmAjoutVisiteur_Load(object sender, EventArgs e)
+        {
+            /*Binding bind = new Binding();
+            bind.Source = liste;
+            cbxAjoutSecteurVisiteur.DisplayMemberPath = "Key";
+
+            cbxAjoutSecteurVisiteur.SelectedValuePath = "Value"; */
         }
     }
 }

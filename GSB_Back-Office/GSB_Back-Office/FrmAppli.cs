@@ -71,8 +71,7 @@ namespace GSB_Back_Office
             #region Visiteur
             DAOVisiteur.lesVisiteurs2 = DAOVisiteur.allVisiteur();
             dgvVisiteur.DataSource = null;
-            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;
-            
+            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;            
             #endregion
 
 
@@ -82,6 +81,7 @@ namespace GSB_Back_Office
         {
 
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
         /* private void initVisiteur(object sender, EventArgs e)
 {
@@ -100,6 +100,8 @@ namespace GSB_Back_Office
         }
 >>>>>>> CHARLES
 
+=======
+>>>>>>> AXEL
 
     }
 }

@@ -15,6 +15,12 @@ namespace GSB_Back_Office
         public FrmAppli()
         {
             InitializeComponent();
+            
+        }
+
+        private void FrmAppli_Load(object sender, System.EventArgs e)
+        {
+             
         }
 
         private void tabPagePraticiens_Click(object sender, EventArgs e)
@@ -54,11 +60,6 @@ namespace GSB_Back_Office
 
         }
 
-        private void FrmAppli_Load(object sender, EventArgs e)
-        {
-            
-
-        }
         private void initVisiteur(object sender, EventArgs e)
         {
             

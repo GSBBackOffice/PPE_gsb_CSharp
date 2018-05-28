@@ -30,7 +30,11 @@ namespace GSB_Back_Office
         {
             try
             {
+<<<<<<< HEAD
+                String req = "INSERT INTO Practicien(raisonSocialePraticien,adressePraticien,telephonePraticien,contactPraticien,coefficientNotoriete,coefficientConfiance,numSpecialite) Values ('" + unPraticien.RaisonSociale +"', '"+unPraticien.Adresse+"','"+unPraticien.Telephone+"','"+unPraticien.Contact+"','"+unPraticien.CoefNotoriete+"','"+unPraticien.CoefConfiance+"','"+unPraticien.Specialite+"')";
+=======
                 String req = "INSERT INTO Practicien (raisonSocialePraticien, adressePraticien, telephonePraticien, contactPraticien, coefficientNotoriete, coefficientConfiance, numSpecialite) Values ('" + unPraticien.RaisonSociale + "', '" + unPraticien.Adresse + "','" + unPraticien.Telephone + "','" + unPraticien.Contact + "','" + unPraticien.CoefNotoriete + "','" + unPraticien.CoefConfiance + "','"+ unPraticien.Specialite + "')";
+>>>>>>> CHARLES
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();

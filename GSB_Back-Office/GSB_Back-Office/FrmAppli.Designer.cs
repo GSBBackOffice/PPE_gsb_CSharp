@@ -82,28 +82,22 @@
             this.tabPageVisiteurs = new System.Windows.Forms.TabPage();
             this.btnAddV = new System.Windows.Forms.Button();
             this.btn_ModifV = new System.Windows.Forms.Button();
-            this.txbDateEmbaucheVisiteur = new System.Windows.Forms.TextBox();
             this.txbVilleVisiteur = new System.Windows.Forms.TextBox();
             this.txbCPVisiteur = new System.Windows.Forms.TextBox();
             this.txbAdresseVisiteur = new System.Windows.Forms.TextBox();
             this.txbPrenomVisiteur = new System.Windows.Forms.TextBox();
             this.txbNomVisiteur = new System.Windows.Forms.TextBox();
-            this.txbNumVisteur = new System.Windows.Forms.TextBox();
             this.txtB_DateV = new System.Windows.Forms.Label();
             this.txtB_VilleV = new System.Windows.Forms.Label();
             this.txtB_CPV = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.dgvVisiteur = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpDateVisiteur = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbxSecteurVisiteur = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).BeginInit();
@@ -566,22 +560,23 @@
             // 
             // tabPageVisiteurs
             // 
+            this.tabPageVisiteurs.Controls.Add(this.button1);
+            this.tabPageVisiteurs.Controls.Add(this.cbxSecteurVisiteur);
+            this.tabPageVisiteurs.Controls.Add(this.label14);
+            this.tabPageVisiteurs.Controls.Add(this.dtpDateVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.btnAddV);
             this.tabPageVisiteurs.Controls.Add(this.btn_ModifV);
-            this.tabPageVisiteurs.Controls.Add(this.txbDateEmbaucheVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbVilleVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbCPVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbAdresseVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbPrenomVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbNomVisiteur);
-            this.tabPageVisiteurs.Controls.Add(this.txbNumVisteur);
             this.tabPageVisiteurs.Controls.Add(this.txtB_DateV);
             this.tabPageVisiteurs.Controls.Add(this.txtB_VilleV);
             this.tabPageVisiteurs.Controls.Add(this.txtB_CPV);
             this.tabPageVisiteurs.Controls.Add(this.label18);
             this.tabPageVisiteurs.Controls.Add(this.label19);
             this.tabPageVisiteurs.Controls.Add(this.label20);
-            this.tabPageVisiteurs.Controls.Add(this.label21);
             this.tabPageVisiteurs.Controls.Add(this.dgvVisiteur);
             this.tabPageVisiteurs.Location = new System.Drawing.Point(4, 24);
             this.tabPageVisiteurs.Name = "tabPageVisiteurs";
@@ -595,9 +590,9 @@
             // btnAddV
             // 
             this.btnAddV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddV.Location = new System.Drawing.Point(561, 384);
+            this.btnAddV.Location = new System.Drawing.Point(561, 368);
             this.btnAddV.Name = "btnAddV";
-            this.btnAddV.Size = new System.Drawing.Size(183, 50);
+            this.btnAddV.Size = new System.Drawing.Size(183, 37);
             this.btnAddV.TabIndex = 36;
             this.btnAddV.Text = "Ajouter un Visiteur";
             this.btnAddV.UseVisualStyleBackColor = true;
@@ -608,65 +603,51 @@
             this.btn_ModifV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ModifV.Location = new System.Drawing.Point(561, 328);
             this.btn_ModifV.Name = "btn_ModifV";
-            this.btn_ModifV.Size = new System.Drawing.Size(183, 50);
+            this.btn_ModifV.Size = new System.Drawing.Size(183, 34);
             this.btn_ModifV.TabIndex = 35;
             this.btn_ModifV.Text = "Modifier";
             this.btn_ModifV.UseVisualStyleBackColor = true;
             this.btn_ModifV.Click += new System.EventHandler(this.btn_ModifV_Click);
             // 
-            // txbDateEmbaucheVisiteur
-            // 
-            this.txbDateEmbaucheVisiteur.Location = new System.Drawing.Point(443, 384);
-            this.txbDateEmbaucheVisiteur.Name = "txbDateEmbaucheVisiteur";
-            this.txbDateEmbaucheVisiteur.Size = new System.Drawing.Size(100, 22);
-            this.txbDateEmbaucheVisiteur.TabIndex = 33;
-            // 
             // txbVilleVisiteur
             // 
-            this.txbVilleVisiteur.Location = new System.Drawing.Point(443, 356);
+            this.txbVilleVisiteur.Location = new System.Drawing.Point(446, 356);
             this.txbVilleVisiteur.Name = "txbVilleVisiteur";
             this.txbVilleVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbVilleVisiteur.TabIndex = 32;
             // 
             // txbCPVisiteur
             // 
-            this.txbCPVisiteur.Location = new System.Drawing.Point(443, 328);
+            this.txbCPVisiteur.Location = new System.Drawing.Point(446, 328);
             this.txbCPVisiteur.Name = "txbCPVisiteur";
             this.txbCPVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbCPVisiteur.TabIndex = 31;
             // 
             // txbAdresseVisiteur
             // 
-            this.txbAdresseVisiteur.Location = new System.Drawing.Point(126, 412);
+            this.txbAdresseVisiteur.Location = new System.Drawing.Point(129, 384);
             this.txbAdresseVisiteur.Name = "txbAdresseVisiteur";
             this.txbAdresseVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbAdresseVisiteur.TabIndex = 30;
             // 
             // txbPrenomVisiteur
             // 
-            this.txbPrenomVisiteur.Location = new System.Drawing.Point(126, 384);
+            this.txbPrenomVisiteur.Location = new System.Drawing.Point(129, 356);
             this.txbPrenomVisiteur.Name = "txbPrenomVisiteur";
             this.txbPrenomVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbPrenomVisiteur.TabIndex = 29;
             // 
             // txbNomVisiteur
             // 
-            this.txbNomVisiteur.Location = new System.Drawing.Point(126, 356);
+            this.txbNomVisiteur.Location = new System.Drawing.Point(129, 328);
             this.txbNomVisiteur.Name = "txbNomVisiteur";
             this.txbNomVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbNomVisiteur.TabIndex = 28;
             // 
-            // txbNumVisteur
-            // 
-            this.txbNumVisteur.Location = new System.Drawing.Point(126, 328);
-            this.txbNumVisteur.Name = "txbNumVisteur";
-            this.txbNumVisteur.Size = new System.Drawing.Size(100, 22);
-            this.txbNumVisteur.TabIndex = 27;
-            // 
             // txtB_DateV
             // 
             this.txtB_DateV.AutoSize = true;
-            this.txtB_DateV.Location = new System.Drawing.Point(287, 387);
+            this.txtB_DateV.Location = new System.Drawing.Point(290, 389);
             this.txtB_DateV.Name = "txtB_DateV";
             this.txtB_DateV.Size = new System.Drawing.Size(121, 16);
             this.txtB_DateV.TabIndex = 25;
@@ -675,7 +656,7 @@
             // txtB_VilleV
             // 
             this.txtB_VilleV.AutoSize = true;
-            this.txtB_VilleV.Location = new System.Drawing.Point(287, 359);
+            this.txtB_VilleV.Location = new System.Drawing.Point(290, 359);
             this.txtB_VilleV.Name = "txtB_VilleV";
             this.txtB_VilleV.Size = new System.Drawing.Size(43, 16);
             this.txtB_VilleV.TabIndex = 24;
@@ -684,7 +665,7 @@
             // txtB_CPV
             // 
             this.txtB_CPV.AutoSize = true;
-            this.txtB_CPV.Location = new System.Drawing.Point(287, 331);
+            this.txtB_CPV.Location = new System.Drawing.Point(290, 331);
             this.txtB_CPV.Name = "txtB_CPV";
             this.txtB_CPV.Size = new System.Drawing.Size(88, 16);
             this.txtB_CPV.TabIndex = 23;
@@ -693,7 +674,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(11, 417);
+            this.label18.Location = new System.Drawing.Point(14, 389);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(65, 16);
             this.label18.TabIndex = 22;
@@ -702,7 +683,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(11, 387);
+            this.label19.Location = new System.Drawing.Point(14, 359);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(61, 16);
             this.label19.TabIndex = 21;
@@ -711,73 +692,55 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 359);
+            this.label20.Location = new System.Drawing.Point(14, 331);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(43, 16);
             this.label20.TabIndex = 20;
             this.label20.Text = "Nom :";
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(11, 331);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(109, 16);
-            this.label21.TabIndex = 19;
-            this.label21.Text = "Numéro Visiteur :";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
-            // 
             // dgvVisiteur
             // 
             this.dgvVisiteur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVisiteur.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.Column1});
             this.dgvVisiteur.Location = new System.Drawing.Point(14, 6);
             this.dgvVisiteur.Name = "dgvVisiteur";
             this.dgvVisiteur.Size = new System.Drawing.Size(730, 316);
             this.dgvVisiteur.TabIndex = 1;
+            this.dgvVisiteur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVisiteur_CellClick);
             this.dgvVisiteur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // dtpDateVisiteur
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nom";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dtpDateVisiteur.Location = new System.Drawing.Point(446, 384);
+            this.dtpDateVisiteur.Name = "dtpDateVisiteur";
+            this.dtpDateVisiteur.Size = new System.Drawing.Size(100, 22);
+            this.dtpDateVisiteur.TabIndex = 37;
             // 
-            // dataGridViewTextBoxColumn2
+            // label14
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Prénom";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(290, 418);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 16);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "Secteur :";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // dataGridViewTextBoxColumn3
+            // cbxSecteurVisiteur
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Adresse";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.cbxSecteurVisiteur.FormattingEnabled = true;
+            this.cbxSecteurVisiteur.Location = new System.Drawing.Point(446, 412);
+            this.cbxSecteurVisiteur.Name = "cbxSecteurVisiteur";
+            this.cbxSecteurVisiteur.Size = new System.Drawing.Size(100, 24);
+            this.cbxSecteurVisiteur.TabIndex = 39;
             // 
-            // dataGridViewTextBoxColumn4
+            // button1
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Code Postal";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Ville";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Date d\'Embauche";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Secteur";
-            this.Column1.Name = "Column1";
+            this.button1.Location = new System.Drawing.Point(561, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 35);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Supprimer";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmAppli
             // 
@@ -857,29 +820,23 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAjouterPraticien;
         private System.Windows.Forms.Button btnModifierPraticien;
-        private System.Windows.Forms.DataGridView dgvVisiteur;
         private System.Windows.Forms.Button btnAddV;
         private System.Windows.Forms.Button btn_ModifV;
-        private System.Windows.Forms.TextBox txbDateEmbaucheVisiteur;
         private System.Windows.Forms.TextBox txbVilleVisiteur;
         private System.Windows.Forms.TextBox txbCPVisiteur;
         private System.Windows.Forms.TextBox txbAdresseVisiteur;
         private System.Windows.Forms.TextBox txbPrenomVisiteur;
         private System.Windows.Forms.TextBox txbNomVisiteur;
-        private System.Windows.Forms.TextBox txbNumVisteur;
         private System.Windows.Forms.Label txtB_DateV;
         private System.Windows.Forms.Label txtB_VilleV;
         private System.Windows.Forms.Label txtB_CPV;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridView dgvVisiteur;
+        private System.Windows.Forms.DateTimePicker dtpDateVisiteur;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbxSecteurVisiteur;
     }
 }

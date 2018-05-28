@@ -15,11 +15,11 @@ namespace GSB_Back_Office
         private string adresse;
         private string cpVisiteur;
         private string villeVisiteur;
-        private DateTime dateEmbauche;
+        private string dateEmbauche;
         private string secteurVisiteur;
 
 
-        public Visiteur(string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, DateTime dateEmbauche, string secteurVisiteur)
+        public Visiteur(string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, string dateEmbauche, string secteurVisiteur)
         {
             this.nomVisiteur = nomVisiteur;
             this.prenomVisiteur = prenomVisiteur;
@@ -96,7 +96,7 @@ namespace GSB_Back_Office
             }
         }
 
-        public DateTime DateEmbauche
+        public string DateEmbauche
         {
             get
             {

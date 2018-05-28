@@ -70,40 +70,28 @@
             // 
             // txbContactPraticienAjout
             // 
-            this.txbContactPraticienAjout.Location = new System.Drawing.Point(150, 96);
+            this.txbContactPraticienAjout.Location = new System.Drawing.Point(133, 96);
             this.txbContactPraticienAjout.Name = "txbContactPraticienAjout";
             this.txbContactPraticienAjout.Size = new System.Drawing.Size(100, 20);
             this.txbContactPraticienAjout.TabIndex = 29;
             // 
             // txbTelPraticienAjout
             // 
-<<<<<<< HEAD
-            this.txbTelPraticienAjout.Location = new System.Drawing.Point(150, 68);
-=======
             this.txbTelPraticienAjout.Location = new System.Drawing.Point(133, 68);
->>>>>>> CHARLES
             this.txbTelPraticienAjout.Name = "txbTelPraticienAjout";
             this.txbTelPraticienAjout.Size = new System.Drawing.Size(100, 20);
             this.txbTelPraticienAjout.TabIndex = 28;
             // 
             // txbAdressePraticienAjout
             // 
-<<<<<<< HEAD
-            this.txbAdressePraticienAjout.Location = new System.Drawing.Point(150, 40);
-=======
             this.txbAdressePraticienAjout.Location = new System.Drawing.Point(133, 40);
->>>>>>> CHARLES
             this.txbAdressePraticienAjout.Name = "txbAdressePraticienAjout";
             this.txbAdressePraticienAjout.Size = new System.Drawing.Size(100, 20);
             this.txbAdressePraticienAjout.TabIndex = 27;
             // 
             // txbRaisonSocPraticienAjout
             // 
-<<<<<<< HEAD
-            this.txbRaisonSocPraticienAjout.Location = new System.Drawing.Point(150, 12);
-=======
             this.txbRaisonSocPraticienAjout.Location = new System.Drawing.Point(133, 12);
->>>>>>> CHARLES
             this.txbRaisonSocPraticienAjout.Name = "txbRaisonSocPraticienAjout";
             this.txbRaisonSocPraticienAjout.Size = new System.Drawing.Size(100, 20);
             this.txbRaisonSocPraticienAjout.TabIndex = 26;
@@ -138,7 +126,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 99);
+            this.label10.Location = new System.Drawing.Point(18, 99);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 21;
@@ -147,11 +135,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-<<<<<<< HEAD
-            this.label9.Location = new System.Drawing.Point(35, 73);
-=======
             this.label9.Location = new System.Drawing.Point(18, 73);
->>>>>>> CHARLES
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 13);
             this.label9.TabIndex = 20;
@@ -160,11 +144,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-<<<<<<< HEAD
-            this.label8.Location = new System.Drawing.Point(35, 43);
-=======
             this.label8.Location = new System.Drawing.Point(18, 43);
->>>>>>> CHARLES
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 19;
@@ -173,11 +153,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-<<<<<<< HEAD
-            this.label7.Location = new System.Drawing.Point(35, 15);
-=======
             this.label7.Location = new System.Drawing.Point(18, 15);
->>>>>>> CHARLES
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 18;
@@ -207,12 +183,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(567, 155);
-=======
             this.ClientSize = new System.Drawing.Size(588, 180);
             this.Controls.Add(this.lblAjoutPraticien);
->>>>>>> CHARLES
             this.Controls.Add(this.btnAjoutPraticien);
             this.Controls.Add(this.txbSpécialitePraticienAjout);
             this.Controls.Add(this.txbCoeffConfiancePraticienAjout);

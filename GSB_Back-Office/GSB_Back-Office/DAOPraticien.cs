@@ -23,11 +23,8 @@ namespace GSB_Back_Office
         {
             try
             {
-<<<<<<< HEAD
+
                 String req = "INSERT INTO Practicien(raisonSocialePraticien,adressePraticien,telephonePraticien,contactPraticien,coefficientNotoriete,coefficientConfiance,numSpecialite) Values ('" + unPraticien.RaisonSociale +"', '"+unPraticien.Adresse+"','"+unPraticien.Telephone+"','"+unPraticien.Contact+"','"+unPraticien.CoefNotoriete+"','"+unPraticien.CoefConfiance+"','"+unPraticien.Specialite+"')";
-=======
-                String req = "INSERT INTO Practicien (raisonSocialePraticien, adressePraticien, telephonePraticien, contactPraticien, coefficientNotoriete, coefficientConfiance, numSpecialite) Values ('" + unPraticien.RaisonSociale + "', '" + unPraticien.Adresse + "','" + unPraticien.Telephone + "','" + unPraticien.Contact + "','" + unPraticien.CoefNotoriete + "','" + unPraticien.CoefConfiance + "','"+ unPraticien.Specialite + "')";
->>>>>>> CHARLES
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
                 db.connect();
@@ -38,9 +35,9 @@ namespace GSB_Back_Office
                 MessageBox.Show("ERREUR : " + ex);
             }
         }
-        public List<Praticien> toutLesPraticiens = new List<Praticien>();
+        public static List<Praticien> toutLesPraticiens = new List<Praticien>();
 
-        public void affichePraticien()
+        public static void affichePraticien()
         {
             try
             {
@@ -54,6 +51,7 @@ namespace GSB_Back_Office
                 {
                     p = new Praticien(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetString(5), rs.GetString(6));
                     lesPraticiensDAO.Add(p);
+                    toutLesPraticiens.Add(p);
                 }
             }            
 

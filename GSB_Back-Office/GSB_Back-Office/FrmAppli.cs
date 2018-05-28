@@ -18,6 +18,7 @@ namespace GSB_Back_Office
             
         }
 
+<<<<<<< Updated upstream
         private void FrmAppli_Load(object sender, System.EventArgs e)
         {
              
@@ -27,6 +28,9 @@ namespace GSB_Back_Office
             DAOProduit.initProduits();
         }
         #region practiciens
+=======
+
+>>>>>>> Stashed changes
         private void tabPagePraticiens_Click(object sender, EventArgs e)
         {
 
@@ -74,31 +78,48 @@ namespace GSB_Back_Office
         {
 
         }
+<<<<<<< Updated upstream
 
 <<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> Stashed changes
         private void FrmAppli_Load(object sender, EventArgs e)
         {
             
             #region Visiteur
             DAOVisiteur.lesVisiteurs2 = DAOVisiteur.allVisiteur();
             dgvVisiteur.DataSource = null;
-            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;            
+            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;
+            #endregion
+
+            #region Praticien
+            DAOPraticien.toutLesPraticiens = DAOPraticien.affichePraticien();
+            dgvPraticiens.DataSource = null;
+            dgvPraticiens.DataSource = DAOPraticien.toutLesPraticiens;
+
             #endregion
 
 
         }
 
+<<<<<<< Updated upstream
         private void label14_Click(object sender, EventArgs e)
 =======
 >>>>>>> CHARLES
+=======
+        private void label14_Click(object sender, EventArgs e) { }
+
+>>>>>>> Stashed changes
         private void initVisiteur(object sender, EventArgs e)
->>>>>>> CHARLES
+
         {
 
         }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         #endregion
 
@@ -121,6 +142,10 @@ namespace GSB_Back_Office
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+
+
+>>>>>>> Stashed changes
         /* private void initVisiteur(object sender, EventArgs e)
 {
 
@@ -130,17 +155,19 @@ namespace GSB_Back_Office
     }
 }*/
 
-=======
         
         private void initPraticien(object sendeer, EventArgs e)
         {
 
         }
+<<<<<<< Updated upstream
 >>>>>>> CHARLES
 
 =======
 >>>>>>> AXEL
 
 >>>>>>> CHARLES
+=======
+>>>>>>> Stashed changes
     }
 }

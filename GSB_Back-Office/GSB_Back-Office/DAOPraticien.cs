@@ -47,10 +47,8 @@ namespace GSB_Back_Office
         {
             try
             {
-<<<<<<< Updated upstream
                 p = new Praticien(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetString(5), rs.GetString(6));
                 toutLesPraticiens.Add(p);
-=======
                 String req = "SELECT * FROM Praticien";
                 SqlDataReader rs;
                 DAOFactory db = new DAOFactory();
@@ -67,7 +65,6 @@ namespace GSB_Back_Office
             catch (Exception ex)
             {
                 MessageBox.Show("ERREUR : " + ex);
->>>>>>> Stashed changes
             }
             
 

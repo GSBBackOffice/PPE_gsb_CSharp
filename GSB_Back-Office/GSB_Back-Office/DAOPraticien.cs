@@ -19,6 +19,9 @@ namespace GSB_Back_Office
         String coefConfiance;
         String specialite;
 
+        public static List<Praticien> lesPraticiensDAO = new List<Praticien>();
+
+
         public DAOPraticien()
         {
 
@@ -46,20 +49,25 @@ namespace GSB_Back_Office
 
         public void affichePraticien()
         {
-            String req = "SELECT * FROM Praticien";
-            SqlDataReader rs;
-            DAOFactory db = new DAOFactory();
-            db.connect();
-            rs = db.execSQLread(req);
-            Praticien p = null;
-            while (rs.Read())
+            try
             {
-                p = new Praticien(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetString(5), rs.GetString(6));
-                toutLesPraticiens.Add(p);
+                String req = "SELECT * FROM Praticien";
+                SqlDataReader rs;
+                DAOFactory db = new DAOFactory();
+                db.connect();
+                rs = db.execSQLread(req);
+                Praticien p = null;
+                while (rs.Read())
+                {
+                    p = new Praticien(rs.GetString(0), rs.GetString(1), rs.GetString(2), rs.GetString(3), rs.GetString(4), rs.GetString(5), rs.GetString(6));
+                    lesPraticiensDAO.Add(p);
+                }
+            }            
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERREUR : " + ex);
             }
-
         }
-        
-
     }
 }

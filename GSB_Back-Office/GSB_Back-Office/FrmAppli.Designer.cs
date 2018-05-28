@@ -71,7 +71,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvPraticiens = new System.Windows.Forms.DataGridView();
             this.colRaisSocPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAdrPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTelPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,7 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).BeginInit();
             this.tabPagePraticiens.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPraticiens)).BeginInit();
             this.tabPageVisiteurs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).BeginInit();
             this.SuspendLayout();
@@ -347,7 +347,7 @@
             this.tabPagePraticiens.Controls.Add(this.label8);
             this.tabPagePraticiens.Controls.Add(this.label7);
             this.tabPagePraticiens.Controls.Add(this.label6);
-            this.tabPagePraticiens.Controls.Add(this.dataGridView2);
+            this.tabPagePraticiens.Controls.Add(this.dgvPraticiens);
             this.tabPagePraticiens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPagePraticiens.Location = new System.Drawing.Point(4, 24);
             this.tabPagePraticiens.Name = "tabPagePraticiens";
@@ -507,10 +507,10 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Code praticien";
             // 
-            // dataGridView2
+            // dgvPraticiens
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPraticiens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPraticiens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colRaisSocPraticien,
             this.colAdrPraticien,
             this.colTelPraticien,
@@ -518,10 +518,10 @@
             this.colCoefNotorietePraticien,
             this.colCoefConfiancePraticien,
             this.colSpePraticien});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(745, 298);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvPraticiens.Location = new System.Drawing.Point(6, 6);
+            this.dgvPraticiens.Name = "dgvPraticiens";
+            this.dgvPraticiens.Size = new System.Drawing.Size(745, 298);
+            this.dgvPraticiens.TabIndex = 0;
             // 
             // colRaisSocPraticien
             // 
@@ -752,7 +752,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAppli";
             this.Text = "GSB Back-Office";
-            this.Load += new System.EventHandler(this.FrmAppli_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageProduits.ResumeLayout(false);
             this.tabPageProduits.PerformLayout();
@@ -761,7 +760,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).EndInit();
             this.tabPagePraticiens.ResumeLayout(false);
             this.tabPagePraticiens.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPraticiens)).EndInit();
             this.tabPageVisiteurs.ResumeLayout(false);
             this.tabPageVisiteurs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).EndInit();
@@ -795,7 +794,7 @@
         private System.Windows.Forms.DataGridView dgvInteractionProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colInteractionProduit;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvPraticiens;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRaisSocPraticien;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAdrPraticien;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTelPraticien;

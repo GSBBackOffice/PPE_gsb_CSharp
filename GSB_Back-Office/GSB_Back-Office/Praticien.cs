@@ -141,7 +141,7 @@ namespace GSB_Back_Office
 
         public Praticien(String raisonSociale, String adresse, String telephone, String contact, String coefNotoriete, String coefConfiance, String specialite)
         {
-            this.codePraticien = codePraticien;
+            //this.codePraticien = codePraticien;
             this.raisonSociale = raisonSociale;
             this.adresse = adresse;
             this.telephone = telephone;
@@ -247,9 +247,9 @@ namespace GSB_Back_Office
         public static void ajouterPraticien(Praticien unPraticien)
         {
             lesPraticiens.Add(unPraticien);
-            db.creerPraticien(unPraticien);
-                        
+            db.creerPraticien(unPraticien);                        
         }
+
 
     }
 }

@@ -17,7 +17,7 @@ namespace GSB_Back_Office
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmIdentification());
-            Application.Run(new FrmAppli());
+           // Application.Run(new FrmAppli());
         }
     }
 }

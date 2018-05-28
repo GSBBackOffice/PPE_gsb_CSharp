@@ -15,6 +15,12 @@ namespace GSB_Back_Office
         public FrmAppli()
         {
             InitializeComponent();
+            
+        }
+
+        private void FrmAppli_Load(object sender, System.EventArgs e)
+        {
+             
         }
         private void FrmAppli_Load(object sender, EventArgs e)
         {
@@ -35,6 +41,17 @@ namespace GSB_Back_Office
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        private void dgvVisiteur_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbNomVisiteur.Text = dgvVisiteur.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbPrenomVisiteur.Text = dgvVisiteur.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbAdresseVisiteur.Text = dgvVisiteur.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbCPVisiteur.Text = dgvVisiteur.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbVilleVisiteur.Text = dgvVisiteur.CurrentRow.Cells[4].FormattedValue.ToString();
+            dtpDateVisiteur.Value = Convert.ToDateTime(dgvVisiteur.CurrentRow.Cells[5].FormattedValue);
+            string secteur = dgvVisiteur.CurrentRow.Cells[6].FormattedValue.ToString();
+            cbxSecteurVisiteur.Text = secteur;
         }
 
         private void label21_Click(object sender, EventArgs e)
@@ -58,15 +75,31 @@ namespace GSB_Back_Office
 
         }
 
+<<<<<<< HEAD
         
-        private void initVisiteur(object sender, EventArgs e)
+=======
+<<<<<<< HEAD
+        private void FrmAppli_Load(object sender, EventArgs e)
         {
             
-                foreach(Visiteur v in Visiteur.lesVisiteurs)
-            {
-                dgvVisiteur.Rows.Add(v.NumVisiteur, v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche);
-            }
+            #region Visiteur
+            DAOVisiteur.lesVisiteurs2 = DAOVisiteur.allVisiteur();
+            dgvVisiteur.DataSource = null;
+            dgvVisiteur.DataSource = DAOVisiteur.lesVisiteurs2;            
+            #endregion
+
+
         }
+
+        private void label14_Click(object sender, EventArgs e)
+=======
+>>>>>>> CHARLES
+        private void initVisiteur(object sender, EventArgs e)
+>>>>>>> CHARLES
+        {
+
+        }
+<<<<<<< HEAD
         #endregion
 
         private void tabPageProduits_Enter(object sender, EventArgs e)
@@ -85,5 +118,29 @@ namespace GSB_Back_Office
         {
 
         }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        /* private void initVisiteur(object sender, EventArgs e)
+{
+
+        foreach(Visiteur v in Visiteur.lesVisiteurs)
+    {
+        dgvVisiteur.Rows.Add( v.NomVisiteur, v.PrenomVisiteur, v.Adresse, v.CpVisiteur, v.VilleVisiteur, v.DateEmbauche , v.SecteurVisiteur);
+    }
+}*/
+
+=======
+        
+        private void initPraticien(object sendeer, EventArgs e)
+        {
+
+        }
+>>>>>>> CHARLES
+
+=======
+>>>>>>> AXEL
+
+>>>>>>> CHARLES
     }
 }

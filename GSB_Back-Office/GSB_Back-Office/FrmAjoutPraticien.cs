@@ -19,8 +19,14 @@ namespace GSB_Back_Office
 
         private void btnAjoutPraticien_Click(object sender, EventArgs e)
         {
-            Praticien praticien = new Praticien();
-            praticien.ajouterPraticien(txbCodePraticienAjout.ToString(), txbRaisonSocPraticienAjout.ToString(), txbAdressePraticienAjout.ToString(), txbTelPraticienAjout.ToString(), txbContactPraticienAjout.ToString(), txbCoefNotorietePraticienAjout.ToString(), txbCoeffConfiancePraticienAjout.ToString(), txbSpécialitePraticienAjout.ToString());
+            Praticien praticien = new Praticien(txbRaisonSocPraticienAjout.Text,
+                txbAdressePraticienAjout.Text, txbTelPraticienAjout.Text, txbContactPraticienAjout.Text,
+                txbCoefNotorietePraticienAjout.Text, txbCoeffConfiancePraticienAjout.Text,
+                txbSpécialitePraticienAjout.Text);
+            Praticien.ajouterPraticien(praticien);
+
+            lblAjoutPraticien.Text = "Ajout Terminé";
         }
+
     }
 }

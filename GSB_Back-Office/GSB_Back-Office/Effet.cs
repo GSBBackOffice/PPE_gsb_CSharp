@@ -8,6 +8,7 @@ namespace GSB_Back_Office
 {
     class Effet
     {
+<<<<<<< HEAD
         #region Propriétés
         private int numEffet;
         private string descriptionEffet;
@@ -61,5 +62,7 @@ namespace GSB_Back_Office
             TypeEffet = unTypeEffet;
         }
         #endregion
+=======
+>>>>>>> CHARLES
     }
 }

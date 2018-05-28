@@ -23,11 +23,15 @@ namespace GSB_Back_Office
                 while(res.Read())
                 {
                     List<Effet> lesEffets= new List<Effet>();
+<<<<<<< HEAD
                     string reqEffet = "SELECT Effet.numEffet,Effet.descriptionEffet,TypeEffet.libelleTypeEffet " +
                                       "FROM ((((TypeEffet inner join Appartenir on TypeEffet.numTypeEffet=Appartenir.numTypeEffet) "
                                       + "inner join Effet on Appartenir.numEffet=Effet.numEffet) inner join Impliquer on Effet.numEffet"
                                       + "=Impliquer.numEffet) inner join Produit on Produit.numProduit=Impliquer.numProduit) WHERE Produit"
                                       + ".numProduit=" + Int32.Parse(res.GetValue(0).ToString()) + ";";
+=======
+                    string reqEffet = "SELECT Effet.numEffet,Effet.descriptionEffet,TypeEffet.libelleTypeEffet FROM ((((TypeEffet inner join Appartenir on TypeEffet.numTypeEffet=Appartenir.numTypeEffet)inner join Effet on Appartenir.numEffet=Effet.numEffet) inner join Impliquer on Effet.numEffet=Impliquer.numEffet) inner join Produit on Produit.numProduit=Impliquer.numProduit) WHERE Produit.numProduit=" + Int32.Parse(res.GetValue(0).ToString()) + ";";
+>>>>>>> CHARLES
                     SqlDataReader resEffet;
                     resEffet = db.execSQLread(reqEffet);
                     while(resEffet.Read())
@@ -35,6 +39,7 @@ namespace GSB_Back_Office
                         Effet e = new Effet(Int32.Parse(resEffet.GetValue(0).ToString()), resEffet.GetValue(1).ToString(), res.GetValue(3).ToString());
                         lesEffets.Add(e);
                     }
+<<<<<<< HEAD
                     string reqFamille = "SELECT * from FamilleMedicament WHERE numFamille=" + Int32.Parse(res.GetValue(8).ToString()) + " ;";
                     SqlDataReader resFamille = db.execSQLread(reqFamille);
                     FamilleProduit famille = new FamilleProduit();
@@ -47,6 +52,10 @@ namespace GSB_Back_Office
                     Produit p = new Produit(res.GetValue(0).ToString(),res.GetValue(1).ToString(), res.GetValue(2).ToString(), Int32.Parse(res.GetValue(3).ToString()), float.Parse(res.GetValue(4).ToString()),float.Parse(res.GetValue(5).ToString()),famille, lesEffets);
                 }
                 db.disconnect();
+=======
+                    Produit p = new Produit(res.GetValue(0).ToString(),res.GetValue(1).ToString(), res.GetValue(2).ToString(), Int32.Parse(res.GetValue(3).ToString()), float.Parse(res.GetValue(4).ToString()),float.Parse(res.GetValue(5).ToString()), null);
+                }
+>>>>>>> CHARLES
             }
             catch(Exception e)
             {

@@ -8,6 +8,7 @@ namespace GSB_Back_Office
 {
     class FamilleProduit
     {
+<<<<<<< HEAD
         #region Propriétés
         private int numFamille;
         private string nomFamille;
@@ -48,5 +49,7 @@ namespace GSB_Back_Office
         public FamilleProduit()
         { }
         #endregion
+=======
+>>>>>>> CHARLES
     }
 }

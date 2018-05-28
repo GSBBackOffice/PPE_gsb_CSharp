@@ -11,7 +11,6 @@ namespace GSB_Back_Office
         private static DAOVisiteur db = new DAOVisiteur();
 
         public static List<Visiteur> lesVisiteurs = new List<Visiteur>();
-        private string numVisiteur;
         private string nomVisiteur;
         private string prenomVisiteur;
         private string adresse;
@@ -20,11 +19,9 @@ namespace GSB_Back_Office
         private string dateEmbauche;
         private string secteurVisiteur;
 
-       
 
-        public Visiteur(string numVisiteur, string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, string dateEmbauche, string secteurVisiteur)
+        public Visiteur(string nomVisiteur, string prenomVisiteur, string adresse, string cpVisiteur, string villeVisiteur, string dateEmbauche, string secteurVisiteur)
         {
-            this.numVisiteur = numVisiteur;
             this.nomVisiteur = nomVisiteur;
             this.prenomVisiteur = prenomVisiteur;
             this.adresse = adresse;
@@ -34,19 +31,6 @@ namespace GSB_Back_Office
             this.secteurVisiteur = secteurVisiteur;
         }
         #region Accesseurs
-     
-        public string NumVisiteur
-        {
-            get
-            {
-                return numVisiteur;
-            }
-
-            set
-            {
-                numVisiteur = value;
-            }
-        }
 
         public string NomVisiteur
         {
@@ -137,7 +121,7 @@ namespace GSB_Back_Office
             {
                 secteurVisiteur = value;
             }
-        }
+        } 
         #endregion
 
         public static void ajouterVisiteur(Visiteur unVisiteur)

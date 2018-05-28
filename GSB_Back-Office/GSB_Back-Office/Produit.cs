@@ -8,6 +8,7 @@ namespace GSB_Back_Office
 {
     class Produit
     {
+<<<<<<< HEAD
         #region Propriétés
         public static List<Produit> lesProduits;
         private string numProduit;
@@ -126,5 +127,7 @@ namespace GSB_Back_Office
         }
         #endregion
 
+=======
+>>>>>>> CHARLES
     }
 }

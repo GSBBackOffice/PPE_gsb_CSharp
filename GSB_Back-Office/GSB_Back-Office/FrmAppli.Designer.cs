@@ -71,7 +71,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvPraticiens = new System.Windows.Forms.DataGridView();
             this.colRaisSocPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAdrPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTelPraticien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,21 +82,19 @@
             this.tabPageVisiteurs = new System.Windows.Forms.TabPage();
             this.btnAddV = new System.Windows.Forms.Button();
             this.btn_ModifV = new System.Windows.Forms.Button();
-            this.txbDateEmbaucheVisiteur = new System.Windows.Forms.TextBox();
             this.txbVilleVisiteur = new System.Windows.Forms.TextBox();
             this.txbCPVisiteur = new System.Windows.Forms.TextBox();
             this.txbAdresseVisiteur = new System.Windows.Forms.TextBox();
             this.txbPrenomVisiteur = new System.Windows.Forms.TextBox();
             this.txbNomVisiteur = new System.Windows.Forms.TextBox();
-            this.txbNumVisteur = new System.Windows.Forms.TextBox();
             this.txtB_DateV = new System.Windows.Forms.Label();
             this.txtB_VilleV = new System.Windows.Forms.Label();
             this.txtB_CPV = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.dgvVisiteur = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,16 +102,24 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab.SuspendLayout();
+=======
+            this.dtpDateVisiteur = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbxSecteurVisiteur = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabControl1.SuspendLayout();
+>>>>>>> CHARLES
             this.tabPageProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEffetThera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).BeginInit();
             this.tabPagePraticiens.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPraticiens)).BeginInit();
             this.tabPageVisiteurs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).BeginInit();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
             // tab
             // 
             this.tab.Controls.Add(this.tabPageProduits);
@@ -127,6 +133,21 @@
             this.tab.SelectedIndex = 0;
             this.tab.Size = new System.Drawing.Size(765, 491);
             this.tab.TabIndex = 0;
+=======
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPageProduits);
+            this.tabControl1.Controls.Add(this.tabPagePraticiens);
+            this.tabControl1.Controls.Add(this.tabPageVisiteurs);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(60, 20);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(20, 3);
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(765, 491);
+            this.tabControl1.TabIndex = 0;
+>>>>>>> CHARLES
             // 
             // tabPageProduits
             // 
@@ -354,7 +375,7 @@
             this.tabPagePraticiens.Controls.Add(this.label8);
             this.tabPagePraticiens.Controls.Add(this.label7);
             this.tabPagePraticiens.Controls.Add(this.label6);
-            this.tabPagePraticiens.Controls.Add(this.dataGridView2);
+            this.tabPagePraticiens.Controls.Add(this.dgvPraticiens);
             this.tabPagePraticiens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPagePraticiens.Location = new System.Drawing.Point(4, 24);
             this.tabPagePraticiens.Name = "tabPagePraticiens";
@@ -514,10 +535,10 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Code praticien";
             // 
-            // dataGridView2
+            // dgvPraticiens
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPraticiens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPraticiens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colRaisSocPraticien,
             this.colAdrPraticien,
             this.colTelPraticien,
@@ -525,10 +546,17 @@
             this.colCoefNotorietePraticien,
             this.colCoefConfiancePraticien,
             this.colSpePraticien});
+<<<<<<< HEAD
             this.dataGridView2.Location = new System.Drawing.Point(6, 6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(745, 298);
             this.dataGridView2.TabIndex = 0;
+=======
+            this.dgvPraticiens.Location = new System.Drawing.Point(6, 6);
+            this.dgvPraticiens.Name = "dgvPraticiens";
+            this.dgvPraticiens.Size = new System.Drawing.Size(745, 298);
+            this.dgvPraticiens.TabIndex = 0;
+>>>>>>> CHARLES
             // 
             // colRaisSocPraticien
             // 
@@ -567,22 +595,23 @@
             // 
             // tabPageVisiteurs
             // 
+            this.tabPageVisiteurs.Controls.Add(this.button1);
+            this.tabPageVisiteurs.Controls.Add(this.cbxSecteurVisiteur);
+            this.tabPageVisiteurs.Controls.Add(this.label14);
+            this.tabPageVisiteurs.Controls.Add(this.dtpDateVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.btnAddV);
             this.tabPageVisiteurs.Controls.Add(this.btn_ModifV);
-            this.tabPageVisiteurs.Controls.Add(this.txbDateEmbaucheVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbVilleVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbCPVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbAdresseVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbPrenomVisiteur);
             this.tabPageVisiteurs.Controls.Add(this.txbNomVisiteur);
-            this.tabPageVisiteurs.Controls.Add(this.txbNumVisteur);
             this.tabPageVisiteurs.Controls.Add(this.txtB_DateV);
             this.tabPageVisiteurs.Controls.Add(this.txtB_VilleV);
             this.tabPageVisiteurs.Controls.Add(this.txtB_CPV);
             this.tabPageVisiteurs.Controls.Add(this.label18);
             this.tabPageVisiteurs.Controls.Add(this.label19);
             this.tabPageVisiteurs.Controls.Add(this.label20);
-            this.tabPageVisiteurs.Controls.Add(this.label21);
             this.tabPageVisiteurs.Controls.Add(this.dgvVisiteur);
             this.tabPageVisiteurs.Location = new System.Drawing.Point(4, 24);
             this.tabPageVisiteurs.Name = "tabPageVisiteurs";
@@ -596,9 +625,15 @@
             // btnAddV
             // 
             this.btnAddV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnAddV.Location = new System.Drawing.Point(561, 384);
             this.btnAddV.Name = "btnAddV";
             this.btnAddV.Size = new System.Drawing.Size(183, 50);
+=======
+            this.btnAddV.Location = new System.Drawing.Point(561, 368);
+            this.btnAddV.Name = "btnAddV";
+            this.btnAddV.Size = new System.Drawing.Size(183, 37);
+>>>>>>> CHARLES
             this.btnAddV.TabIndex = 36;
             this.btnAddV.Text = "Ajouter un Visiteur";
             this.btnAddV.UseVisualStyleBackColor = true;
@@ -609,12 +644,17 @@
             this.btn_ModifV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ModifV.Location = new System.Drawing.Point(561, 328);
             this.btn_ModifV.Name = "btn_ModifV";
+<<<<<<< HEAD
             this.btn_ModifV.Size = new System.Drawing.Size(183, 50);
+=======
+            this.btn_ModifV.Size = new System.Drawing.Size(183, 34);
+>>>>>>> CHARLES
             this.btn_ModifV.TabIndex = 35;
             this.btn_ModifV.Text = "Modifier";
             this.btn_ModifV.UseVisualStyleBackColor = true;
             this.btn_ModifV.Click += new System.EventHandler(this.btn_ModifV_Click);
             // 
+<<<<<<< HEAD
             // txbDateEmbaucheVisiteur
             // 
             this.txbDateEmbaucheVisiteur.Location = new System.Drawing.Point(443, 384);
@@ -625,38 +665,60 @@
             // txbVilleVisiteur
             // 
             this.txbVilleVisiteur.Location = new System.Drawing.Point(443, 356);
+=======
+            // txbVilleVisiteur
+            // 
+            this.txbVilleVisiteur.Location = new System.Drawing.Point(446, 356);
+>>>>>>> CHARLES
             this.txbVilleVisiteur.Name = "txbVilleVisiteur";
             this.txbVilleVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbVilleVisiteur.TabIndex = 32;
             // 
             // txbCPVisiteur
             // 
+<<<<<<< HEAD
             this.txbCPVisiteur.Location = new System.Drawing.Point(443, 328);
+=======
+            this.txbCPVisiteur.Location = new System.Drawing.Point(446, 328);
+>>>>>>> CHARLES
             this.txbCPVisiteur.Name = "txbCPVisiteur";
             this.txbCPVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbCPVisiteur.TabIndex = 31;
             // 
             // txbAdresseVisiteur
             // 
+<<<<<<< HEAD
             this.txbAdresseVisiteur.Location = new System.Drawing.Point(126, 412);
+=======
+            this.txbAdresseVisiteur.Location = new System.Drawing.Point(129, 384);
+>>>>>>> CHARLES
             this.txbAdresseVisiteur.Name = "txbAdresseVisiteur";
             this.txbAdresseVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbAdresseVisiteur.TabIndex = 30;
             // 
             // txbPrenomVisiteur
             // 
+<<<<<<< HEAD
             this.txbPrenomVisiteur.Location = new System.Drawing.Point(126, 384);
+=======
+            this.txbPrenomVisiteur.Location = new System.Drawing.Point(129, 356);
+>>>>>>> CHARLES
             this.txbPrenomVisiteur.Name = "txbPrenomVisiteur";
             this.txbPrenomVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbPrenomVisiteur.TabIndex = 29;
             // 
             // txbNomVisiteur
             // 
+<<<<<<< HEAD
             this.txbNomVisiteur.Location = new System.Drawing.Point(126, 356);
+=======
+            this.txbNomVisiteur.Location = new System.Drawing.Point(129, 328);
+>>>>>>> CHARLES
             this.txbNomVisiteur.Name = "txbNomVisiteur";
             this.txbNomVisiteur.Size = new System.Drawing.Size(100, 22);
             this.txbNomVisiteur.TabIndex = 28;
             // 
+<<<<<<< HEAD
             // txbNumVisteur
             // 
             this.txbNumVisteur.Location = new System.Drawing.Point(126, 328);
@@ -668,6 +730,12 @@
             // 
             this.txtB_DateV.AutoSize = true;
             this.txtB_DateV.Location = new System.Drawing.Point(287, 387);
+=======
+            // txtB_DateV
+            // 
+            this.txtB_DateV.AutoSize = true;
+            this.txtB_DateV.Location = new System.Drawing.Point(290, 389);
+>>>>>>> CHARLES
             this.txtB_DateV.Name = "txtB_DateV";
             this.txtB_DateV.Size = new System.Drawing.Size(121, 16);
             this.txtB_DateV.TabIndex = 25;
@@ -676,7 +744,11 @@
             // txtB_VilleV
             // 
             this.txtB_VilleV.AutoSize = true;
+<<<<<<< HEAD
             this.txtB_VilleV.Location = new System.Drawing.Point(287, 359);
+=======
+            this.txtB_VilleV.Location = new System.Drawing.Point(290, 359);
+>>>>>>> CHARLES
             this.txtB_VilleV.Name = "txtB_VilleV";
             this.txtB_VilleV.Size = new System.Drawing.Size(43, 16);
             this.txtB_VilleV.TabIndex = 24;
@@ -685,7 +757,11 @@
             // txtB_CPV
             // 
             this.txtB_CPV.AutoSize = true;
+<<<<<<< HEAD
             this.txtB_CPV.Location = new System.Drawing.Point(287, 331);
+=======
+            this.txtB_CPV.Location = new System.Drawing.Point(290, 331);
+>>>>>>> CHARLES
             this.txtB_CPV.Name = "txtB_CPV";
             this.txtB_CPV.Size = new System.Drawing.Size(88, 16);
             this.txtB_CPV.TabIndex = 23;
@@ -694,7 +770,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
+<<<<<<< HEAD
             this.label18.Location = new System.Drawing.Point(11, 417);
+=======
+            this.label18.Location = new System.Drawing.Point(14, 389);
+>>>>>>> CHARLES
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(65, 16);
             this.label18.TabIndex = 22;
@@ -703,7 +783,11 @@
             // label19
             // 
             this.label19.AutoSize = true;
+<<<<<<< HEAD
             this.label19.Location = new System.Drawing.Point(11, 387);
+=======
+            this.label19.Location = new System.Drawing.Point(14, 359);
+>>>>>>> CHARLES
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(61, 16);
             this.label19.TabIndex = 21;
@@ -712,12 +796,17 @@
             // label20
             // 
             this.label20.AutoSize = true;
+<<<<<<< HEAD
             this.label20.Location = new System.Drawing.Point(11, 359);
+=======
+            this.label20.Location = new System.Drawing.Point(14, 331);
+>>>>>>> CHARLES
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(43, 16);
             this.label20.TabIndex = 20;
             this.label20.Text = "Nom :";
             // 
+<<<<<<< HEAD
             // label21
             // 
             this.label21.AutoSize = true;
@@ -741,51 +830,72 @@
             this.dgvVisiteur.Location = new System.Drawing.Point(51, 6);
             this.dgvVisiteur.Name = "dgvVisiteur";
             this.dgvVisiteur.Size = new System.Drawing.Size(650, 301);
+=======
+            // dgvVisiteur
+            // 
+            this.dgvVisiteur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVisiteur.Location = new System.Drawing.Point(14, 6);
+            this.dgvVisiteur.Name = "dgvVisiteur";
+            this.dgvVisiteur.Size = new System.Drawing.Size(730, 316);
+>>>>>>> CHARLES
             this.dgvVisiteur.TabIndex = 1;
+            this.dgvVisiteur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVisiteur_CellClick);
             this.dgvVisiteur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // dtpDateVisiteur
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nom";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dtpDateVisiteur.Location = new System.Drawing.Point(446, 384);
+            this.dtpDateVisiteur.Name = "dtpDateVisiteur";
+            this.dtpDateVisiteur.Size = new System.Drawing.Size(100, 22);
+            this.dtpDateVisiteur.TabIndex = 37;
             // 
-            // dataGridViewTextBoxColumn2
+            // label14
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Prénom";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(290, 418);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 16);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "Secteur :";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // dataGridViewTextBoxColumn3
+            // cbxSecteurVisiteur
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Adresse";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.cbxSecteurVisiteur.FormattingEnabled = true;
+            this.cbxSecteurVisiteur.Location = new System.Drawing.Point(446, 412);
+            this.cbxSecteurVisiteur.Name = "cbxSecteurVisiteur";
+            this.cbxSecteurVisiteur.Size = new System.Drawing.Size(100, 24);
+            this.cbxSecteurVisiteur.TabIndex = 39;
             // 
-            // dataGridViewTextBoxColumn4
+            // button1
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Code Postal";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Ville";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Date d\'Embauche";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.button1.Location = new System.Drawing.Point(561, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 35);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Supprimer";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmAppli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 515);
+<<<<<<< HEAD
             this.Controls.Add(this.tab);
+=======
+            this.Controls.Add(this.tabControl1);
+>>>>>>> CHARLES
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAppli";
             this.Text = "GSB Back-Office";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.FrmAppli_Load);
             this.tab.ResumeLayout(false);
+=======
+            this.tabControl1.ResumeLayout(false);
+>>>>>>> CHARLES
             this.tabPageProduits.ResumeLayout(false);
             this.tabPageProduits.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContrindication)).EndInit();
@@ -793,7 +903,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvInteractionProduit)).EndInit();
             this.tabPagePraticiens.ResumeLayout(false);
             this.tabPagePraticiens.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPraticiens)).EndInit();
             this.tabPageVisiteurs.ResumeLayout(false);
             this.tabPageVisiteurs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).EndInit();
@@ -827,7 +937,7 @@
         private System.Windows.Forms.DataGridView dgvInteractionProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomProduit;
         private System.Windows.Forms.DataGridViewTextBoxColumn colInteractionProduit;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvPraticiens;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRaisSocPraticien;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAdrPraticien;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTelPraticien;
@@ -853,28 +963,23 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAjouterPraticien;
         private System.Windows.Forms.Button btnModifierPraticien;
-        private System.Windows.Forms.DataGridView dgvVisiteur;
         private System.Windows.Forms.Button btnAddV;
         private System.Windows.Forms.Button btn_ModifV;
-        private System.Windows.Forms.TextBox txbDateEmbaucheVisiteur;
         private System.Windows.Forms.TextBox txbVilleVisiteur;
         private System.Windows.Forms.TextBox txbCPVisiteur;
         private System.Windows.Forms.TextBox txbAdresseVisiteur;
         private System.Windows.Forms.TextBox txbPrenomVisiteur;
         private System.Windows.Forms.TextBox txbNomVisiteur;
-        private System.Windows.Forms.TextBox txbNumVisteur;
         private System.Windows.Forms.Label txtB_DateV;
         private System.Windows.Forms.Label txtB_VilleV;
         private System.Windows.Forms.Label txtB_CPV;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridView dgvVisiteur;
+        private System.Windows.Forms.DateTimePicker dtpDateVisiteur;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbxSecteurVisiteur;
     }
 }

@@ -23,8 +23,7 @@ namespace GSB_Back_Office
             if (id.verifConnexion(txbIdentifiant.Text,txbPassword.Text))
             {
                 FrmAppli frmappli = new FrmAppli();
-                frmappli.Show();
-                this.Close();
+                frmappli.Show();                
             }
             else
             {

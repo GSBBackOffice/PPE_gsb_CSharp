@@ -58,10 +58,8 @@ Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmA
 Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmIdentification.resources
 Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
 Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
-<<<<<<< HEAD
 Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.exe
 Y:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\bin\Debug\GSB_Back-Office.pdb
-=======
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csprojResolveAssemblyReference.cache
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutPraticien.resources
 D:\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.FrmAjoutVisiteur.resources
@@ -88,11 +86,4 @@ C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back_Office.Properties.Resources.resources
 C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.csproj.GenerateResource.Cache
 <<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.exe
-C:\Users\EMIEUX\Source\PPE_gsb_CSharp\GSB_Back-Office\GSB_Back-Office\obj\Debug\GSB_Back-Office.pdb
->>>>>>> CHARLES
->>>>>>> CHARLES
-=======
 >>>>>>> Stashed changes
